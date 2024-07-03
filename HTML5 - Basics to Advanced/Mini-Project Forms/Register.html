@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini-Project 3</title>
+    <style>
+        .Registration-Form{
+            margin-left: auto; margin-right: auto;
+            border: 1px solid #ccc;
+            border-width: 1px;
+            background-color: white;
+            width: 700px;
+        }
+        #table-elements{
+            margin-left: auto;
+            margin-right: auto;
+            background-color: #f2f6ff;
+            width: auto
+        }
+        #icons{
+            padding: 25px;
+        }
+        .image-item{
+            width: 50px;
+            height:50px;
+            padding-top: 16px; padding-bottom: 32px;
+            margin-left: 5px;
+            margin-right: 5px;
+        }
+        .input-label{
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+        }
+        .input-item{
+            font-size: 18px;
+            padding-bottom: 12px;
+            margin-bottom: 36px;
+            border-bottom: 1px solid #ccc; border-bottom: 1px solid #ccc;
+            border-top: none; border-left: none; border-right: none;
+            width: 100%;
+
+        }
+        #submit-button{
+            background-color: #0056ff;
+            padding-top: 12px; padding-bottom: 12px;   
+            padding-left: 24px; padding-right: 24px;
+            font-size: 18px;
+            color: white;
+            border: none;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body style="background-color: #f2f6ff;">
+    <form class="Registration-Form">
+        <h2 style="font-weight: 600; font-size: 32px; padding-top: 56px; padding-bottom: 32px; text-align: center;">Register</h2>
+        <div style="background-color: #f2f6ff;">
+            <table id = 'table-elements'>
+                <tr>
+                    <td>
+                        <div id = 'icons'>
+                            <img class="image-item" src="/Mini-Project Forms/google.png" alt="Google">
+                        </div>
+                    </td>
+                    <td>
+                        <div id = 'icons'>
+                            <img class="image-item" src="/Mini-Project Forms/facebook.webp" alt="Facebook">
+                        </div>
+                    </td>
+                    <td>
+                        <div id = 'icons'>
+                            <img class="image-item" src="/Mini-Project Forms/github.png" alt="Github">
+                        </div>
+                    </td>
+                    <td>
+                        <div id = 'icons'>
+                            <img class="image-item" src="/Mini-Project Forms/linkedin.webp" alt="Linkedin">
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+            <div style="padding-top: 80px; padding-bottom: 40px; padding-left: 80px; padding-right: 80px;">
+            <div class= 'input-label'>
+                <input class= 'input-item' type="text" name="Username" placeholder="Username" required><br>
+            </div>
+            <div class= 'input-label'>
+                <input class= 'input-item' type="email" name="Email" placeholder="Email" required><br>
+            </div>
+            <div class= 'input-label'>
+                <input class= 'input-item' type="password" name="Password" placeholder="Password" required minlength="8" maxlength="24"><br>
+            </div>
+            <div class= 'input-label'>
+                <input class= 'input-item' type="password" name="Password" placeholder="Confirm Password" required minlength="8" maxlength="24"><br>
+            </div>
+            <div class= 'input-label'>
+                <input id= 'submit-button' type="submit" value="Register">
+            </div> 
+            </div> 
+         </form>
+</body>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <style>
+        .header{
+            background-color: #102349;
+        }
+        #nav{
+            padding: 17px;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+        }
+        #nav-item{
+            padding: 15px;
+            color: whitesmoke;
+        }
+        .Registration-Form{
+            margin-left: auto; margin-right: auto;
+            border: 1px solid #ccc;
+            border-width: 1px;
+            background-color: white;
+            width: 450px;
+            height: 350px;
+        }
+        .input-label{
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+        }
+        .input-item{
+            font-size: 18px;
+            padding-bottom: 12px;
+            margin-bottom: 36px;
+            border-bottom: 1px solid #ccc; border-bottom: 1px solid #ccc;
+            border-top: none; border-left: none; border-right: none;
+            width: 100%;
+
+        }
+        #submit-button{
+            background-color: #102349;
+            padding-top: 12px; padding-bottom: 12px;   
+            padding-left: 24px; padding-right: 24px;
+            font-size: 18px;
+            color: white;
+            border: none;
+            display: inline-block;
+        }
+        #foot{
+           background-color: #102349; 
+           text-align: center;
+           color: whitesmoke;
+           padding: 10px;
+        }
+    </style>
+</head>
+<body style="background-color:rgb(249, 245, 245); margin: 0%;">
+    <header class="header">
+        <nav id="nav">
+            <span><a href='/Final Project/Home.html' target="_blank" id="nav-item">BOOKS</a></span>
+            <span><a href='/Final Project/About.html' target="_blank" id="nav-item">ABOUT</a></span>
+            <span><a href='/Final Project/Contact.html' target="_blank" id="nav-item">CONTACT</a></span>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2 style="text-align: center; padding: 12px;">Interested in more books? Contact Me.</h2>
+            <form class="Registration-Form" method="post">
+                <div style="padding-top: 80px; padding-bottom: 40px; padding-left: 80px; padding-right: 80px;">
+                    <div class= 'input-label'>
+                        <input class= 'input-item' type="text" name="Fullname" placeholder="Full Name" required><br>
+                    </div>
+                    <div class= 'input-label'>
+                        <input class= 'input-item' type="email" name="Email" placeholder="Email" required><br>
+                    </div>
+                    <div class= 'input-label'>
+                        <input class= 'input-item' type="number" name="Contact_number" placeholder="Contact Number" required minlength="10" maxlength="10"><br>
+                    </div>
+                    <div class= 'input-label'>
+                        <input id= 'submit-button' type="submit" value="Submit">
+                    </div>
+                </div>
+            </form>
+        </section>
+    </main>
+    <br><br><br><br><br><br><br><br><br><br>
+    <footer id ='foot'>
+        <span style="padding-right: 15px;">BOOKS</span>
+        <span style="padding-right: 15px;">ABOUT</span>
+        <span>CONTACT</span><br>
+        <p>Copyright 2024</p>
+    </footer>
+</body>
+</html>

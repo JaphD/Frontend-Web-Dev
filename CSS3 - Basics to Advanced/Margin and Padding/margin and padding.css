@@ -1,0 +1,28 @@
+#second-para{
+    border: 3px solid red;
+    /*
+    padding: 16px;
+    padding-top: 16px;
+    padding-left: 24px;
+    padding-top: 20px;
+    padding-bottom: 28px;
+    */
+
+    /*Other way to define padding, with clockwise orientation(Top,Right,Bottom,Left)
+    padding: 16px 20px 24px 28px;*/
+
+    /*Using two values is also possible with the values indicating Top and Bottom, Right and Left*/
+    padding: 16px 20px;
+
+
+
+    margin:48px;
+    margin-top: 48px;
+    margin-right: 24px;
+    margin-bottom: 32px;
+    margin-left: 60px;
+
+    margin: 48px 24px 32px 60px;
+
+    margin: 48px 60px
+}

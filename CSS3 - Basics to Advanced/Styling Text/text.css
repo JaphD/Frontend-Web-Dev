@@ -1,0 +1,19 @@
+h1{
+    color:bisque;
+    text-align: center;
+    font-style: italic;
+    text-decoration: overline;
+    text-transform: capitalize;
+
+}
+p{
+    color: darkgrey;
+    text-align: center;
+    letter-spacing: 1px;
+    word-spacing: 1px;
+    line-height: 1.4;
+    font-family: "Luxurious Roman", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
