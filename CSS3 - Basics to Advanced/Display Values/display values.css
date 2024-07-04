@@ -1,0 +1,12 @@
+.image-item{
+    width: 250px;
+    height: 180px;
+}
+.image-wrapper{
+    display: inline;
+}
+.menu-item{
+    display: block;
+    display: none; /*Hides the element as well as no space is occupied*/
+    visibility: hidden; /*Hides the element but the space is occupied*/
+}
