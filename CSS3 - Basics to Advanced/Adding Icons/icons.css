@@ -1,0 +1,27 @@
+button{
+    color: white; /*The color used here also applies to the added icons*/
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    outline: none;
+}
+
+#btn-facebook{
+    background-color: rgb(46, 46, 162);
+}
+
+#btn-google{
+    background-color: lightcoral;
+}
+
+#btn-github{
+    background-color: black;
+}
+
+.label{
+    padding-left: 8px;
+}
+#github-logo{
+    width: 20px;
+    height: 20px;
+}
