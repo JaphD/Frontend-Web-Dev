@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positioning HTML Elements - Sticky</title>
+    <link href="/Positioning HTML Elements/sticky.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/d50204446e.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header id = "topbar">
+        <nav>
+            <span id = 'logo'><i class="fa-brands fa-youtube"></i>Youtube</span>
+            <span class="menu-item">Shorts</span>
+            <span class="menu-item">Subscription</span>
+        </nav>
+    </header>
+    <main>
+        <div id="wrapper">
+            <img id="youtube-img1" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAkFBMVEX/////AAD/xcX/q6v/srL/uLj//Pz/6Oj/2Nj/+Pj/3d3/9PT/8PD/x8f/v7//Rkb/Y2P/PT3/0ND/y8v/cXH/4+P/k5P/Hh7/nZ3/iIj/1NT/6+v/3Nz/fn7/VVX/IyP/DQ3/MjL/aWn/Vlb/dnb/oqL/QkL/XV3/j4//Zmb/GBj/hIT/n5//dHT/MDD/Tk70z9TjAAAE/klEQVR4nO2daV/iMBCHkVLKWY7Scosoh6Ir3//bLV1RBDmyM5NO+vP/vNs3JI8Lmcx0khYKAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAH4D1XpjHMSTyqgbNYth6PulHd4n6T98PwyLzag7qkziYNyoV7WnfIlqI6iNoqLvLZPhtNe+b81nD3dUHmbz1n27Nx0mS88Po1EtaOiIB1EpWaxbHYbL/3l3WutFUoqCLOTG/rSTidZ5OlN/bFMvTmaKdp/MktiSX9jSdvuiFVrw6861tY6YR9KCPW2lHzyWJf2CvrbPGfqCS2tNW+YCNSnBQNvkIkKLanmjLXKRjcxvsa3tcYW2hGCobXEVicDo7nc0ZcMX9LQdbuCxDV2MhN/pcwUjbYObNJmGj9oCN3lkGmrP3wCeYFN7+gbwvqZD7ekbMGQZalYsTJlzBKvaszeCU46raE/eiArDsKQ9eSNKDMNn7ckbwVlqXE6cDnBSqDwspXd3HYZhNlV7Lg90wbL23A2h1zIa2lM3pEE2jLWnbgi95DbRnrohE7JhV3vqhnTJhgK502DF/4ybFMmGPn/wKIudn082FJjc7s9bfuV/zHXoG9Mlf/B/X6Dgnv9B11iSDQf8wfc/kaLVouSAbCiQWnwtAgJ/rYvQk4spf/DDMle39xh5SjYUmNP3hbxiK1XpkQ0F0sPjUGUpctATxC1/8JNgXLZSntySDQW+VT+2G7GFyEFPgQU6oM5sqJrikWNGNhQY/OyWUTxyOGcoHjncM5SOHFRBiTLN5cRGMnJQCzV1gbGvpG6CkaNONJQoRF1NToMngRFSqF21Et1eN9LvpkxLLrWHT6LUdrPA8CYwCLnYJlFqu11CkYgc1GKbxNNDkyIRP3KMiIYSxUSzMhg3clDLiRLdQqaFPl7koDZ9Z2lYCNYKhsUsDQuFP5mMomfIWm5yYMgMGVRDie5gs7G5YZ/aKZyVIT/pd9tQYvtNNczidyiTQjm80gilwc4aipUyqIaW9zSC5Sg3d22SJUWqoc3cQii530PNLezlh9IPhakdphLHDs8Zyj+eoR5EtFSnsfCIjVqnsVJrs/KYlFprs1AvtfSom9q6J9Gpf2woUjo8A7lbX2Ds74b2Wk6ogrKGYiX8M5ANBZqgPw3ttn6RDd/5Y+8N7bbvvZMNpXoxrDXS7KH3Yggcr9wZNqyf0qQfshTo+oqsNrTtoXd9CUxumMWdPQnZMB8HuzgdtHk4I5tCPyfr6q0tp9BvccnHEVJ6K0YhLye7OOfVszgswWfFMHT/RoUUzq0KifbkjaCHw7wERM5J55H25I2g9pqk5OOIJf2AZcH1K5Q+4F2kxGkByYo1yzCD1IcN/dRTSh6WGs5CU/gFdwzlYFfDvSdK4km3Xdi37mkL3IQr6PzWlLMp/cD1LFjgRnOB484WeeMLun1JDedqmgNjbY0rCF3Q7u6NX5xbvo5wtaoodhf0Lk908bfYYeWFP3AvLPID4QnjF22lI9o23nURCzxsE2Jq6/0P5dCFFwj0QtF3Bvwg9odbrerNZjv0bf3vnVCvFb1ksV5l88qS2Wq9SLxijfEAhkO5Pg7iSrcZlrzB8+vi5ak1pzcG9eetp5fF6/PAK4XNbiUOxnW730gG5WpqXju878k/ed+Tf3jfUy01qTqrAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAECUv8gfbKj5f8bLAAAAAElFTkSuQmCC" alt="Youtube">
+        </div>
+        <div id="wrapper">
+            <img id="youtube-img" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAkFBMVEX/////AAD/xcX/q6v/srL/uLj//Pz/6Oj/2Nj/+Pj/3d3/9PT/8PD/x8f/v7//Rkb/Y2P/PT3/0ND/y8v/cXH/4+P/k5P/Hh7/nZ3/iIj/1NT/6+v/3Nz/fn7/VVX/IyP/DQ3/MjL/aWn/Vlb/dnb/oqL/QkL/XV3/j4//Zmb/GBj/hIT/n5//dHT/MDD/Tk70z9TjAAAE/klEQVR4nO2daV/iMBCHkVLKWY7Scosoh6Ir3//bLV1RBDmyM5NO+vP/vNs3JI8Lmcx0khYKAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAH4D1XpjHMSTyqgbNYth6PulHd4n6T98PwyLzag7qkziYNyoV7WnfIlqI6iNoqLvLZPhtNe+b81nD3dUHmbz1n27Nx0mS88Po1EtaOiIB1EpWaxbHYbL/3l3WutFUoqCLOTG/rSTidZ5OlN/bFMvTmaKdp/MktiSX9jSdvuiFVrw6861tY6YR9KCPW2lHzyWJf2CvrbPGfqCS2tNW+YCNSnBQNvkIkKLanmjLXKRjcxvsa3tcYW2hGCobXEVicDo7nc0ZcMX9LQdbuCxDV2MhN/pcwUjbYObNJmGj9oCN3lkGmrP3wCeYFN7+gbwvqZD7ekbMGQZalYsTJlzBKvaszeCU46raE/eiArDsKQ9eSNKDMNn7ckbwVlqXE6cDnBSqDwspXd3HYZhNlV7Lg90wbL23A2h1zIa2lM3pEE2jLWnbgi95DbRnrohE7JhV3vqhnTJhgK502DF/4ybFMmGPn/wKIudn082FJjc7s9bfuV/zHXoG9Mlf/B/X6Dgnv9B11iSDQf8wfc/kaLVouSAbCiQWnwtAgJ/rYvQk4spf/DDMle39xh5SjYUmNP3hbxiK1XpkQ0F0sPjUGUpctATxC1/8JNgXLZSntySDQW+VT+2G7GFyEFPgQU6oM5sqJrikWNGNhQY/OyWUTxyOGcoHjncM5SOHFRBiTLN5cRGMnJQCzV1gbGvpG6CkaNONJQoRF1NToMngRFSqF21Et1eN9LvpkxLLrWHT6LUdrPA8CYwCLnYJlFqu11CkYgc1GKbxNNDkyIRP3KMiIYSxUSzMhg3clDLiRLdQqaFPl7koDZ9Z2lYCNYKhsUsDQuFP5mMomfIWm5yYMgMGVRDie5gs7G5YZ/aKZyVIT/pd9tQYvtNNczidyiTQjm80gilwc4aipUyqIaW9zSC5Sg3d22SJUWqoc3cQii530PNLezlh9IPhakdphLHDs8Zyj+eoR5EtFSnsfCIjVqnsVJrs/KYlFprs1AvtfSom9q6J9Gpf2woUjo8A7lbX2Ds74b2Wk6ogrKGYiX8M5ANBZqgPw3ttn6RDd/5Y+8N7bbvvZMNpXoxrDXS7KH3Yggcr9wZNqyf0qQfshTo+oqsNrTtoXd9CUxumMWdPQnZMB8HuzgdtHk4I5tCPyfr6q0tp9BvccnHEVJ6K0YhLye7OOfVszgswWfFMHT/RoUUzq0KifbkjaCHw7wERM5J55H25I2g9pqk5OOIJf2AZcH1K5Q+4F2kxGkByYo1yzCD1IcN/dRTSh6WGs5CU/gFdwzlYFfDvSdK4km3Xdi37mkL3IQr6PzWlLMp/cD1LFjgRnOB484WeeMLun1JDedqmgNjbY0rCF3Q7u6NX5xbvo5wtaoodhf0Lk908bfYYeWFP3AvLPID4QnjF22lI9o23nURCzxsE2Jq6/0P5dCFFwj0QtF3Bvwg9odbrerNZjv0bf3vnVCvFb1ksV5l88qS2Wq9SLxijfEAhkO5Pg7iSrcZlrzB8+vi5ak1pzcG9eetp5fF6/PAK4XNbiUOxnW730gG5WpqXju878k/ed+Tf3jfUy01qTqrAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAECUv8gfbKj5f8bLAAAAAElFTkSuQmCC" alt="Youtube">
+        </div>
+        <section>
+            <h2>About YouTube</h2>
+            <p>YouTube is an American online video sharing and social media platform headquartered in San Bruno, California. Launched in February 2005 by Steve Chen, Chad Hurley, and Jawed Karim, it was later bought by Google in November 2006.</p>
+        </section>
+        <section>
+            <h2>Popular Videos</h2>
+            <ul>
+                <li>How to learn Python in 2023</li>
+                <li>Top 10 JavaScript Frameworks</li>
+                <li>The Future of AI and Machine Learning</li>
+                <li>10 Tips for Effective Remote Work</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Contact Us</h2>
+            <p>If you have any questions or concerns, feel free to reach out to us at:</p>
+            <address>
+                YouTube HQ<br>
+                901 Cherry Ave<br>
+                San Bruno, CA 94066<br>
+                <a href="mailto:support@youtube.com">support@youtube.com</a>
+            </address>
+        </section>
+        <section>
+            <h2>Join Our Community</h2>
+            <p>Stay connected with us on social media:</p>
+            <ul>
+                <li><i class="fa-brands fa-facebook"></i> Facebook</li>
+                <li><i class="fa-brands fa-twitter"></i> Twitter</li>
+                <li><i class="fa-brands fa-instagram"></i> Instagram</li>
+                <li><i class="fa-brands fa-linkedin"></i> LinkedIn</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Our Mission</h2>
+            <p>Our mission is to give everyone a voice and show them the world. We believe that everyone deserves to have a voice, and that the world is a better place when we listen, share, and build community through our stories.</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 YouTube. All rights reserved.</p>
+    </footer>
+</body>
+</html>
