@@ -13,7 +13,10 @@
         <nav class="navbar">
             <span class="menu-item"><a href='' id="navbar-item">Gmail</a></span>
             <span class="menu-item"><a href='' id="navbar-item">Images</a></span>
-            <span class= "menu-item"><i class="fa-solid fa-flask" id="Search-Labs"></i></span>
+            <div class="tooltip-1">
+                <span class="tooltiptext-1">Search Labs</span>
+                <span class="menu-item"><i class="fa-solid fa-flask" id="Search-Labs"></i></span>
+            </div>
             <span class="menu-item">
                 <div class="dropdown">
                     <i id="dropdown-menu" class="material-icons">apps</i>
@@ -29,7 +32,12 @@
                     </div>
                 </div>
             </span> 
-            <span class="menu-item"><a href="/Google Home-Page Lookalike - Practice Problem 1/profile_pic.jpg"><img src='/Google Home-Page Lookalike - Practice Problem 1/profile_pic.jpg' alt="Profile Picture" id="profile-pic"></a></span>
+            <div class="tooltip-2">
+                <span class="tooltiptext-2">
+                    <p><span class="first-word">Google Account</span><br>Yafet Daniel<br>japhethdanny@gmail.com</p>
+                </span>
+                <span class="menu-item"><a href="/Google Home-Page Lookalike - Practice Problem 1/profile_pic.jpg"><img src='/Google Home-Page Lookalike - Practice Problem 1/profile_pic.jpg' alt="Profile Picture" id="profile-pic"></a></span>
+            </div>
         </nav>
     </header>
     <main>
@@ -38,8 +46,13 @@
         </section>
         <section>
             <form id = 'input-box-wrapper'>
-                <input class = 'search-box' type="search" name="search">
-                <i id= 'search-logo' class="fa-solid fa-magnifying-glass"></i> <a href="https://www.gstatic.com/images/branding/googlemic/2x/googlemic_color_24dp.png"><img src="https://www.gstatic.com/images/branding/googlemic/2x/googlemic_color_24dp.png" alt="Voice-Search" id="voice-search"></a> <br>
+                    <span class="tooltiptext-3">Search</span>
+                    <input class = 'search-box' type="search" name="search">
+                <div class="tooltip-3">
+                    <span class="tooltiptext-3">Search by voice</span>
+                    <i id= 'search-logo' class="fa-solid fa-magnifying-glass"></i> <a href="https://www.gstatic.com/images/branding/googlemic/2x/googlemic_color_24dp.png"><img src="https://www.gstatic.com/images/branding/googlemic/2x/googlemic_color_24dp.png" alt="Voice-Search" id="voice-search"></a>
+                </div>
+                <br>
                 <input class= 'btn' type="submit" value="Google Search">
                 <input class= 'btn' type="submit" value="I'm Feeling Lucky">
             </form>   
