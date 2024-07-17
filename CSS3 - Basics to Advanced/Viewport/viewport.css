@@ -1,0 +1,75 @@
+/* Reset some basic styles */
+body, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Basic body styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* Navbar styles */
+nav {
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+}
+
+nav a:hover {
+    background-color: #575757;
+}
+
+/* Content and article styles */
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 1rem;
+}
+
+article {
+    background-color: #f4f4f4;
+    padding: 1rem;
+    margin: 1rem;
+    width: 30%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+}
+
+article h2 {
+    margin-bottom: 0.5rem;
+}
+
+article p {
+    margin-bottom: 0;
+}
+
+/* Responsive styling 
+@media (max-width: 768px) {
+    article {
+        width: 45%;
+    }
+}
+
+@media (max-width: 480px) {
+    article {
+        width: 100%;
+    }
+}
+*/
+
