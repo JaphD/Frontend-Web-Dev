@@ -1,0 +1,67 @@
+body, h1, p {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #FFF;
+}
+
+.menu {
+    width: 100%;
+    height: 62px;
+    padding: 12px 80px;
+    border-bottom: 1px solid #ccc;
+    box-sizing: border-box;
+    background-color: whitesmoke;
+}
+
+.logo {
+    color: black;
+    font-size: 32px;
+    margin-right: 48px;
+    position: relative;
+    top: -6px;
+    text-decoration: none;
+}
+
+#logo-link {
+    text-decoration: none;
+}
+
+main img {
+    /* The following two attributes allow us to make the screen adjust based on the available dimensions and avoid overflowing */
+    width: 100%;
+    max-width: 800px; 
+    min-width: 250px;
+    
+
+    margin: 0 auto;
+    height: auto;
+    display: block;
+}
+
+main {
+    background-color: rgb(225, 232, 234);
+    padding: 20px;
+    
+}
+
+h1 {
+    margin: 25px;
+    text-align: center;
+}
+
+section p {
+    /* The following two attributes allow us to make the screen adjust based on the available dimensions and avoid overflowing */
+    width: 100%;
+    max-width: 800px; 
+    min-width: 250px;
+    
+
+    margin-bottom: 20px;
+    margin: 0 auto;
+}
