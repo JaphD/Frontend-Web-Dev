@@ -100,35 +100,17 @@ aside {
 }
 
 @media screen and (max-width: 768px) {
-    .menu {
-        width: 100%;
-        height: 62px;
-        padding: 12px 50px;
-        border-bottom: 1px solid #ccc;
-        box-sizing: border-box;
-        background-color: white;
-        text-align: center;
-    }
-
     .logo {
         display: block;
-        color: black;
         font-size: 30px;
         margin-right: 0px;
-        position: relative;
         top: -13px;
-        text-decoration: none;
     }
 
     .menu-item {
         margin-right: 15px;
-        font-weight: 500;
-        cursor: pointer;
         font-size: 15px;
-        position: relative;
         top: -23px;
-        color: black;
-        text-decoration: none;
     }
 
     .menu span:last-child .menu-item {
@@ -136,10 +118,13 @@ aside {
     }
 
     section {
-        display: block;
-        padding: 10px;
+        padding: 16px;
         width: 100%; 
         box-sizing: border-box;    
+    }
+
+    main section img {
+        height: 350px;
     }
 
     h1 {
@@ -147,22 +132,17 @@ aside {
     }
 
     section p {
-        text-align: left;
         font-size: 15px;
     }
 
     main aside p {
-        text-align: center;
         font-size: 15px;
     }
 
     aside {
-            display: block;
-            width: 100%;
-            background-color: white;
-            padding: 16px;
-            box-sizing: border-box;
-            border-radius: 8px;
-            box-shadow: 0 2px 5px #aaa;
+        display: block;
+        width: 100%;
+        padding: 16px;
+        box-sizing: border-box;
         } 
     }
