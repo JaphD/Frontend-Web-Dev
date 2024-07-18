@@ -1,0 +1,44 @@
+body {
+    margin: 0;
+}
+
+#container {
+    width: 100vw;
+    height: 400px;
+    background-color: lightblue;
+    box-sizing: border-box;
+    padding: 32px;
+    display: flex;
+}
+
+.item {
+    background-color: lightcoral;
+    margin-right: 16px;
+    margin-bottom: 16px;
+    padding: 32px;
+    font-size: 24px;
+    text-align: center;
+    /*
+    flex-grow: 1;
+    */
+    flex-basis: 120px;
+}
+/*
+.item:nth-child(2) {
+    background-color: bisque;
+    /*
+    flex-grow: 0;
+    flex-shrink: 2;
+    */
+    /*order: -1;  moves the element to the first position */
+    /* order: 1:  moves the element to the last position 
+}
+*/
+.item:nth-child(odd) {
+    align-self: flex-start;
+}
+
+.item:nth-child(even) {
+    background-color: bisque;
+    align-self: center;
+}
