@@ -1,0 +1,39 @@
+body {
+    margin: 0;
+}
+
+#container {
+    width: 100vw;
+    height: 700px;
+    background-color: lightblue;
+    box-sizing: border-box;
+    padding: 32px;
+
+    
+    display: flex;
+    flex-direction: column;
+    /* Align-items moves the items in the cross-axis direction
+    align-items: stretch;*/
+    /* Align-content also used to align items along the cross-axis. It works only when flex
+        is wrapped around multiple lines.
+    flex-wrap: wrap;
+    align-content: center;
+    */
+    flex-wrap: wrap;
+    /* Aligns the items vertically*/
+    justify-content: center;
+    /* Aligns the itesm horizontally*/
+    align-content: center;
+   
+
+    
+}
+
+.item {
+    background-color: lightcoral;
+    margin-right: 16px;
+    margin-bottom: 16px;
+    padding: 32px;
+    font-size: 24px;
+    text-align: center;
+}
