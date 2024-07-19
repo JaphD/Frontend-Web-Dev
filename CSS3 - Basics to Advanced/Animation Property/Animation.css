@@ -1,0 +1,49 @@
+div {
+    text-align: center;
+    width: 350px;
+    height: 325px;
+    margin-left: 50px;
+    margin-top: 50px;
+    border: 1px solid black;
+
+    /*
+    animation-name: pulse;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+    */
+
+    /* Short hand */
+    animation: pulse 5s ease-in infinite;
+}
+
+div h2 {
+    margin: 16px;
+}
+
+div:hover {
+    animation-play-state: paused;
+}
+
+@keyframes pulse {
+    0% {
+        background-color: lightgreen;
+        border-radius: 0px;
+        transform: rotateZ(0deg);
+        /*transform: translate(0%,0%);*/
+    }
+
+    50% {
+        background-color: lightyellow;
+        border-radius: 90px;
+        transform: rotateZ(180deg);
+        /*transform: translate(30%,30%);*/
+    }
+
+    100% {
+        background-color: lightcoral;
+        border-radius: 175px;
+        transform: rotateZ(360deg);
+        /*transform: translate(55%,55%);*/
+    }
+}
