@@ -1,0 +1,49 @@
+#div1 {
+    width: 300px;
+    height: 300px;
+    margin: 48px;
+    text-align: center;
+    background-color: lightcoral;
+    border-radius: 180px;
+    border: 1px solid transparent;
+    /*
+    transition-property: background;
+    transition-duration: 3000ms;
+    transition-timing-function: ease-out; */
+
+    /* Short hand way of doing the above */
+    transition: all 3s ease-in;
+}
+
+#div1 h1 {
+    padding: 22px;
+}
+
+#div1:hover {
+    background-color: lightblue;
+    margin-left: 250px;
+    border-radius: 0px;
+    border: 1px solid black;
+}
+
+#div2 {
+    margin-left: 48px;
+    width: 300px;
+    height: 290px;
+    text-align: center;
+    background-color: bisque;
+    transition: all 3s ease-in-out; 
+}
+
+#div2 h1 {
+    padding: 22px;
+}
+
+#div2:hover {
+    margin-left: 250px;
+    border-radius: 250px;
+    background-color: black;
+    color: white;
+    font-weight: 600;
+}
+
