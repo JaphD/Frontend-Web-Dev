@@ -1,0 +1,29 @@
+body {
+    background-color: lightblue;
+}
+div {
+    width: 200px;
+    height: 200px;
+    background-color: lightcoral;
+    
+    position: absolute;
+    /* To position the div in the center (horizontally) 
+    left: 50%;
+    transform: translateX(-50%);
+    */
+    
+    /* To position the div in the center (vertically) 
+    top: 50%;
+    transform: translateY(-50%);
+    */
+
+    /* To position the div in the center along both axes. Note it won't work
+        by using the above ways together because one will be overridden by another*/
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+
+
+}
+
