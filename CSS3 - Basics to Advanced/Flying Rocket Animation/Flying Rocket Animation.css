@@ -1,0 +1,26 @@
+body {
+    margin: 0;
+    background-color: lightblue;
+}
+
+i {
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    transform: rotateZ(-43deg);
+    font-size: 48px;
+
+    animation: fly 5s ease-in;
+    animation-iteration-count: infinite; 
+    animation-direction: alternate;
+}
+
+@keyframes fly {
+    0% {
+        transform: translate3d(-50%, 0, 0) rotateZ(-43deg);
+    }
+
+    100% {
+        transform: translate3d(-50%, -100vh, 0) rotateZ(-43deg);
+    }
+}
