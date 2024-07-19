@@ -1,0 +1,23 @@
+div {
+    width: 200px;
+    height: 200px;
+    margin-top: 55px;
+    margin-left: 100px;
+    background-color: lightcoral;
+    /* Translate
+    transform: translate(50px, 90px);
+    */
+
+    /* Rotate 
+    transform: rotateZ(50deg);
+    */
+
+    /* Scale 
+    transform: scale(1.5, 1.5);
+    */
+
+    /* Skew */
+    transform: skewY(25deg);
+
+}
+
