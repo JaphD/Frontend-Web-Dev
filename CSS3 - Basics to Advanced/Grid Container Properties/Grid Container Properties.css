@@ -1,0 +1,64 @@
+body {
+    margin: 0;
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    letter-spacing: 4px;
+    font-size: 48px;
+}
+
+#grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    grid-gap: 16px;
+    /*row-gap: 32px;
+    column-gap: 48px; 
+    justify-content: space-around; */
+}
+
+.movie-poster {
+    width: 100%;
+    max-width: 400px;
+    box-sizing: border-box;  
+}
+
+.movie-poster:hover {
+    animation: zoom 1s forwards;
+}
+
+@keyframes zoom {
+    0% {
+        transform: scale(1);
+        box-shadow: 0 2px 5px #ccc;
+    }
+
+    100% {
+        transform: scale(1.1);
+    }
+}
+
+@media (max-width: 900px) {
+    /* For tablet and Ipad screens*/
+    h1 {
+        text-align: center;
+    }
+
+    #grid-container {
+        grid-template-columns: auto auto auto;
+    }
+}
+
+@media (max-width: 400px) {
+    /* For smaller screens */
+    h1 {
+        text-align: center;
+    }
+
+    #grid-container {
+        grid-template-columns: auto auto;
+    }
+}
