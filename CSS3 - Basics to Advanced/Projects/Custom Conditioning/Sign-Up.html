@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-Up</title>
+    <link href="/Projects/Custom Conditioning/Sign-Up.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/d50204446e.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header id="topbar">
+        <nav>
+            <div id="left-menu">
+                <p id="logo"><a href= '/Projects/Custom Conditioning/Custom Conditioning.html'>Custom Conditioning</a></p>
+                <i class="fa-solid fa-person-running"></i>
+
+                <p class="menu-item">Workout Plans</p>
+                <p class="menu-item">Nutrition</p>
+                <p class="menu-item">Blog</p>
+                <p class="menu-item">About Us</p>
+                <p class="menu-item">Contact</p>
+            </div>
+            <div id="right-menu">
+                <div id="search-container">
+                    <input type="text" id="search-box">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+
+                    <i class="fa-solid fa-bell"></i>
+                    <img id= "profile-pic" src="/Topbar using Flex/profile_pic.jpg" alt="Profile-Pic">
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <form class="Registration-Form">
+            <h2>Register</h2>
+            <div id="grid-container">
+                <div class="social">
+                    <i class="fa-brands fa-google"></i>
+                </div>
+                <div class="social">
+                    <i class="fa-brands fa-facebook"></i>
+                </div>
+                <div class="social">
+                    <i class="fa-brands fa-x-twitter"></i>
+                </div>
+                <div class="social">
+                    <i class="fa-brands fa-apple"></i>
+                </div>
+            </div>
+            <div id= 'input'>
+                <div class= 'input-label'>
+                    <input class= 'input-item' type="text" name="Username" placeholder="Username" required><br>
+                </div>
+                <div class= 'input-label'>
+                    <input class= 'input-item' type="email" name="Email" placeholder="Email" required><br>
+                </div>
+                <div class= 'input-label'>
+                    <input class= 'input-item' type="password" name="Password" placeholder="Password" required minlength="8" maxlength="24"><br>
+                </div>
+                <div class= 'input-label'>
+                    <input class= 'input-item' type="password" name="Password" placeholder="Confirm Password" required minlength="8" maxlength="24"><br>
+                </div>
+                <div class= 'input-label'>
+                    <input class="input-item" type="number" name="age" min="14" placeholder="Age" required>
+                </div> 
+                <div class= 'input-label'>
+                    <select class="input-item" name="Gender">
+                        <option value="" disabled selected>Gender</option>
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                    </select>
+                </div> 
+                <div class= 'input-label'>
+                    <select class="input-item" name="Fitness Goal">
+                        <option value="" disabled selected>Select Your Fitness Goal</option>
+                        <option value="Weight-Loss">Weight Loss</option>
+                        <option value="Muscle-Gain">Muscle Gain</option>
+                        <option value="Improved Endurance">Improved Endurance</option>
+                    </select>
+                </div> 
+                <div class= 'input-label'>
+                    <select class="input-item" name="Current Fitness Level">
+                        <option value="" disabled selected>Select Your Fitness Level</option>
+                        <option value="Beginner">Beginner</option>
+                        <option value="Intermediate">Intermediate</option>
+                        <option value="Advanced">Advanced</option>
+                    </select>
+                </div> 
+                <div class= 'input-label'>
+                    <select class="input-item" name="Health Conditions or Injuries">
+                        <option value="" disabled selected>Select Current Health Condition</option>
+                        <option value="No Condition">No Known Health Conditions or Injuries</option>
+                        <option value="Cardiovascular Conditions">Cardiovascular Conditions</option>
+                        <option value="Musculoskeletal Injuries">Musculoskeletal Injuries</option>
+                        <option value="Joint Issues">Joint Issues</option>
+                        <option value="Respiratory Conditions">Respiratory Conditions</option>
+                        <option value="Diabetes">Diabetes</option>
+                        <option value="Neurological Conditions">Neurological Conditions</option>
+                        <option value="Pregnancy">Pregnancy</option>
+                        <option value="Recovery from Surgery or Injury">Recovery from Surgery or Injury</option>
+                    </select>
+                </div> 
+                <div class= 'input-label'>
+                    <input id= 'submit-button' type="submit" value="Register">
+                </div> 
+            </div> 
+        </form>
+    </main>
+</body>
+</html>

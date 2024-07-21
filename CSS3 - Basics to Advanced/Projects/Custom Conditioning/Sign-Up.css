@@ -117,144 +117,82 @@ main {
     align-items: center;
     padding: 50px;
 }
-  
-.hero {
-    text-align: center;
-    margin-bottom: 50px;
-}
-  
-.hero h2 {
-    font-size: 36px;
-    margin-bottom: 20px;
-}
-  
-.hero p {
-    font-size: 18px;
-    color: rgb(37, 36, 36);
-}
-  
-.hero a {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #121314;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 0px;
-    transition: border 0.3s, border-radius 0.3s, font-weight 0.3s;
-}
 
-.hero a:hover {
-    border: 3px solid transparent;
-    border-radius: 10px;
-    font-weight: 700;
-    animation: button 0.3s forwards;
-}
-  
-.services {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 40%;
-}
-  
-.services h2 {
-    text-align: center;
-}
-
-.services ul {
-    list-style: none;
-    padding: 0;
-}
-  
-.services li {
-    text-align: center;
-    margin-bottom: 30px;
-    padding: 16px;
-    border: 1px solid transparent;
-    transition: background-color 0.3s, box-shadow 0.3s;
-}
-
-.services li:hover {
-    cursor: pointer;
-    background-color: #e2a37f; 
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-    color: #333; 
-    animation: zoom 1s forwards;
-}
-  
-.services li i {
-    font-size: 36px;
-    margin-bottom: 10px;
-}
-  
-.services li h4 {
-    font-size: 20px;
-    margin-bottom: 10px;
-}
-  
-.testimonials {
-    display: flex;
-    justify-content: space-between;
-    width: 80%;
-    margin-top: 50px;
-}
-  
-.testimonials h3 {
-    text-align: center;
-    margin-right: 32px;
-}
-
-.testimonial {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+.Registration-Form {
+    margin: 100px auto;
     border: 1px solid #ccc;
-    border-radius: 8px;
-    padding: 20px;
-    width: 45%;
-    margin-right: 15px;
+    border-radius: 6px;
+    border-width: 1px;
+    background-color: #f2f6ff;
+    width: 700px;
 }
 
-.testimonial p {
-    font-size: 18px;
+.Registration-Form:hover {
+    box-shadow: 4px 4px 10px #936745;
 }
-  
-.testimonial span {
-    font-style: italic;
-    display: block;
-    text-align: right;
-}
-  
-.call-to-action {
+
+.Registration-Form h2 {
+    font-weight: 600; 
+    font-size: 32px; 
+    padding-top: 56px; 
+    padding-bottom: 32px; 
     text-align: center;
-    margin-top: 50px;
-}
-  
-.call-to-action h2 {
-    font-size: 30px;
-}
-  
-.call-to-action p {
-    font-size: 18px;
-    color: rgb(37, 36, 36);
-    margin-bottom: 20px;
-}
-  
-.call-to-action a {
-    display: inline-block;
-    padding: 12px 25px;
-    background-color: #121314;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 0px;
-    transition: border 0.3s, border-radius 0.3s, font-weight 0.3s;
 }
 
-.call-to-action a:hover {
-    border: 3px solid transparent;
-    border-radius: 8px;
-    font-weight: 700;
-    animation: button 0.3s forwards;
+#grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 16px;
+}
+
+.social {
+    font-size: 42px;
+    margin: 25px 0px;
+    align-items: center;
+}
+
+.social:hover {
+    animation: button 1s forwards;
+}
+
+#input {
+    padding: 40px 80px 40px 80px;
+}
+
+.input-label {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.input-item {
+    font-size: 18px;
+    padding-bottom: 12px;
+    margin-bottom: 36px;
+    border-bottom: 1px solid #ccc; border-bottom: 1px solid #ccc;
+    border-top: none; border-left: none; border-right: none;
+    width: 100%;
+    background-color: #f2f6ff;;
+}
+
+.input-item:focus {
+    outline: none;
+}
+
+#submit-button {
+    background-color: #e6ab5d;
+    padding-top: 12px; padding-bottom: 12px;   
+    padding-left: 24px; padding-right: 24px;
+    font-size: 18px;
+    color: black;
+    border: none;
+    display: inline-block;
+}
+
+#submit-button:hover {
+    animation: zoom 1s forwards;
 }
 
 @keyframes button {
@@ -273,6 +211,6 @@ main {
 
     100% {
         border-radius: 8px;
-        transform: scale(1.12);
+        transform: scale(1.13);
     }
 }
