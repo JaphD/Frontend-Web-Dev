@@ -1,0 +1,265 @@
+body {
+    margin: 0;
+    background: linear-gradient(135deg, #ff7e5f, #feb47b);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+#topbar {
+    padding: 12px 80px;
+    border-bottom: 1px solid #e9a348;
+    position: sticky;
+    background: #efccac;
+}
+
+#left-menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#right-menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#logo {
+    font-size: 24px;
+    font-weight: 900;
+    letter-spacing: -1px;
+    font-weight: 900;
+    font-family: 'Raleway', sans-serif;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+#left-menu i {
+    margin-right: 48px;
+    font-size: 30px;
+}
+
+.menu-item{
+    margin: 0;
+    margin-right: 24px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    cursor: pointer;
+    font-size: 14px;
+    transition: transform 0.3s, font-weight 0.2s;
+    
+}
+
+.menu-item:hover {
+    transform: scale(1.1);
+    font-weight: 700;
+}
+
+#search-container {
+    display: flex;
+    justify-content: center;
+}
+#search-box {   
+    margin-top: 25px;
+    width: 225px;
+    background: #f6e7d2; 
+    color: #2c2b2b;
+    border: 0.5px solid rgb(170, 168, 168);
+    font-size: 13px;
+    padding: 14px;
+    padding-left: 28px;
+    border-radius: 24px;
+    box-sizing: border-box;
+    position: relative;
+    top: -14px;
+}
+
+#search-box:focus {
+    border: none;
+    outline: none;
+    background-color: #e8c18a;
+}
+
+#right-menu i {
+    position: relative;
+    right: 32px;
+    top: 24px;
+    margin-right: 28px;
+    cursor: pointer;
+}
+
+#profile-pic {
+    width: 32px; 
+    height: 32px; 
+    border: 1px solid rgb(119, 114, 114);
+    border-radius: 20px;
+    position: relative;
+    top: 14px;
+    padding: 1px;
+    right: 35px;
+    cursor: pointer;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+}
+  
+.hero {
+    text-align: center;
+    margin-bottom: 50px;
+}
+  
+.hero h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+  
+.hero p {
+    font-size: 18px;
+    color: rgb(37, 36, 36);
+}
+  
+.hero a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #121314;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 0px;
+    transition: border 0.3s, border-radius 0.3s, font-weight 0.3s;
+}
+
+.hero a:hover {
+    border: 3px solid transparent;
+    border-radius: 10px;
+    font-weight: 700;
+    animation: pulse 0.3s;
+}
+  
+.services {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 40%;
+}
+  
+.services h2 {
+    text-align: center;
+}
+
+.services ul {
+    list-style: none;
+    padding: 0;
+}
+  
+.services li {
+    text-align: center;
+    margin-bottom: 30px;
+    padding: 16px;
+    border: 1px solid transparent;
+}
+
+.services li:hover {
+    cursor: pointer;
+    animation: zoom 1s forwards
+}
+  
+.services li i {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+  
+.services li h4 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+  
+.testimonials {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin-top: 50px;
+}
+  
+.testimonials h3 {
+    text-align: center;
+    margin-right: 32px;
+}
+
+.testimonial {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    width: 45%;
+    margin-right: 15px;
+}
+
+.testimonial p {
+    font-size: 18px;
+}
+  
+.testimonial span {
+    font-style: italic;
+    display: block;
+    text-align: right;
+}
+  
+.call-to-action {
+    text-align: center;
+    margin-top: 50px;
+}
+  
+.call-to-action h2 {
+    font-size: 30px;
+}
+  
+.call-to-action p {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 20px;
+}
+  
+.call-to-action a {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #121314;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.call-to-action a:hover {
+    border: 3px solid #fff;
+    border-radius: 8px;
+    font-weight: 900;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes zoom {
+    0% {
+        transform: scale(1);
+        box-shadow: 0 2px 5px #ccc;
+    }
+
+    100% {
+        border-radius: 8px;
+        background-color: #e5ecff;
+        transform: scale(1.1);
+    }
+}

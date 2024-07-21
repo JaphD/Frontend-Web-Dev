@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google</title>
+    <link href="/Projects/Google Home-Page Lookalike - Practice Problem 1/Google.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/d50204446e.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header id="topbar">
+        <nav class="navbar">
+            <span class="menu-item"><a href='' id="navbar-item">Gmail</a></span>
+            <span class="menu-item"><a href='' id="navbar-item">Images</a></span>
+            <div class="tooltip-1">
+                <span class="tooltiptext-1">Search Labs</span>
+                <span class="menu-item"><i class="fa-solid fa-flask" id="Search-Labs"></i></span>
+            </div>
+            <span class="menu-item">
+                <div class="dropdown">
+                    <i id="dropdown-menu" class="material-icons">apps</i>
+                    <div class="dropdown-content">
+                        <a href="/Projects/Google Home-Page Lookalike - Practice Problem 1/profile_pic.jpg"><img class = 'dropdown-items' id="account"  src='/Projects/Google Home-Page Lookalike - Practice Problem 1/profile_pic.jpg' alt="Account"><br>Account</a>
+                        <a href="http://pluspng.com/img-png/google-logo-png-open-2000.png"><img class = 'dropdown-items' src='http://pluspng.com/img-png/google-logo-png-open-2000.png' alt="Google Search"><br>Search</a>
+                        <a href="http://pluspng.com/img-png/google-maps-png-google-maps-icon-1600.png"><img class = 'dropdown-items'  src='http://pluspng.com/img-png/google-maps-png-google-maps-icon-1600.png' alt="Google Maps"><br>Maps</a>
+                        <a href="https://upload.wikimedia.org/wikipedia/commons/d/da/Google_Drive_logo.png"><img class = 'dropdown-items'  src='https://upload.wikimedia.org/wikipedia/commons/d/da/Google_Drive_logo.png' alt="Google Drive"><br>Drive</a>
+                        <a href=""><img class = 'dropdown-items'  src='data:image/png;base64,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' alt="Google Calendar"><br>Calendar</a>
+                        <a href="https://blogs.acu.edu/innovation_foundry/files/2017/06/google_photos1600.png"><img class = 'dropdown-items'  src='https://blogs.acu.edu/innovation_foundry/files/2017/06/google_photos1600.png' alt="Google Photos"><br>Photos</a>
+                        <a href="https://i.pinimg.com/originals/09/96/92/099692d1d651d51b7caf3040fce0f748.png"><img class = 'dropdown-items'  src='https://i.pinimg.com/originals/09/96/92/099692d1d651d51b7caf3040fce0f748.png' alt="Google Keep"><br>Keep</a>
+                        <a href="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Gmail_icon_%282020%29.svg/300px-Gmail_icon_%282020%29.svg.png"><img class = 'dropdown-items'  src='https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Gmail_icon_%282020%29.svg/300px-Gmail_icon_%282020%29.svg.png' alt="Gmail"><br>Gmail</a> 
+                    </div>
+                </div>
+            </span> 
+            <div class="tooltip-2">
+                <span class="tooltiptext-2">
+                    <p><span class="first-word">Google Account</span><br>Yafet Daniel<br>japhethdanny@gmail.com</p>
+                </span>
+                <span class="menu-item"><a href="/Projects/Google Home-Page Lookalike - Practice Problem 1/profile_pic.jpg"><img src='/Projects/Google Home-Page Lookalike - Practice Problem 1/profile_pic.jpg' alt="Profile Picture" id="profile-pic"></a></span>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section id = 'image-wrapper'>
+            <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_light_color_272x92dp.png" alt="Google">
+        </section>
+        <section>
+            <form id = 'input-box-wrapper'>
+                <input class = 'search-box' type="search" name="search">
+                <i id= 'search-logo' class="fa-solid fa-magnifying-glass"></i>
+                <div class="tooltip-3">
+                    <span class="tooltiptext-3">Search by voice</span>
+                     <a href="https://www.gstatic.com/images/branding/googlemic/2x/googlemic_color_24dp.png"><img src="https://www.gstatic.com/images/branding/googlemic/2x/googlemic_color_24dp.png" alt="Voice-Search" id="voice-search"></a>
+                </div>
+                <br>
+                <input class= 'btn' type="submit" value="Google Search">
+                <input class= 'btn' type="submit" value="I'm Feeling Lucky">
+            </form>   
+        </section>
+        <section>
+            <p id="languages">Google offered in: <span class="language-style">አማርኛ</span> <span class="language-style">ትግርኛ</span> 
+                <span class="language-style">Soomaali</span> <span class="language-style">Afaan Oromoo</span>
+        </section>
+    </main>
+    <footer id="footer">
+        <h3 id="footer-text">Ethiopia</h3>
+        <nav id="footer-bar">
+            <div>
+                <span class="left-footer-item"><a href="" id="left-footer-item">About</a></span>
+                <span class="left-footer-item"><a href="" id="left-footer-item">Advertising</a></span>
+                <span class="left-footer-item"><a href="" id="left-footer-item">Business</a></span>
+                <span class="left-footer-item"><a href="" id="left-footer-item">How Search works</a></span>
+            </div>
+            <div class="footer-right">
+                <span class="right-footer-item">Privacy</span>
+                <span class="right-footer-item">Terms</span>
+                <span class="right-footer-item">Settings</span>
+            </div>
+        </nav>
+    </footer>
+</body>
+</html>
