@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link href="/Projects/Custom Conditioning/Contact.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/d50204446e.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header id="topbar">
+        <nav>
+            <div id="left-menu">
+                <p id="logo"><a href= '/Projects/Custom Conditioning/Custom Conditioning.html'>Custom Conditioning</a></p>
+                <i class="fa-solid fa-person-running"></i>
+
+                <p class="menu-item"><a href = '/Projects/Custom Conditioning/Workout.html'>Workout Plans</a></p>
+                <p class="menu-item"><a href ='/Projects/Custom Conditioning/Nutrition.html'>Nutrition</a></p>
+                <p class="menu-item"><a href ='/Projects/Custom Conditioning/Blog.html'>Blog</a></p>
+                <p class="menu-item"><a href = "/Projects/Custom Conditioning/About.html">About Us</a></p>
+                <p class="menu-item"><a href = '/Projects/Custom Conditioning/Contact.html'>Contact</a></p>
+            </div>
+            <div id="right-menu">
+                <div id="search-container">
+                    <input type="text" id="search-box">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+
+                    <i class="fa-solid fa-bell"></i>
+                    <img id= "profile-pic" src="/Topbar using Flex/profile_pic.jpg" alt="Profile-Pic">
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="contact-intro">
+            <h1>Contact Us</h1>
+            <p>If you have any questions or need further information, please feel free to contact us.</p>
+        </section>
+
+        <section class="contact-form">
+            <h2>Get in Touch</h2>
+            <form action="submit_contact_form.php" method="POST">
+                <label for="name">Name</label>
+                <input class="input-box" type="text" id="name" name="name" required>
+                
+                <label for="email">Email</label>
+                <input class="input-box" type="email" id="email" name="email" required>
+                
+                <label for="subject">Subject</label>
+                <input class="input-box" type="text" id="subject" name="subject" required>
+                
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+                <div>
+                    <button type="submit">Send Message</button>
+                </div>
+                
+            </form>
+        </section>
+
+        <section class="contact-info">
+            <h2>Our Contact Information</h2>
+            <p><strong>Email:</strong> info@customconditioning.com</p>
+            <p><strong>Phone:</strong> (123) 456-7890</p>
+            <p><strong>Address:</strong> 123 Fitness St, Fit City, FC 12345</p>
+        </section>
+    </main>
+    
+    <footer>
+        <!-- Footer content here -->
+    </footer>
+</body>
+</html>

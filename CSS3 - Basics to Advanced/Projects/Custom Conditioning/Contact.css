@@ -1,11 +1,6 @@
 body {
     margin: 0;
     background: linear-gradient(135deg, #ff7e5f, #feb47b);
-    /*background-image: 
-        url('https://t4.ftcdn.net/jpg/07/36/23/03/240_F_736230372_swAZA1f8h5IX9luWJ9f36CMGvvDgPwWP.jpg'),
-        linear-gradient(to bottom, rgba(246, 246, 247, 0.5), rgba(225, 230, 236, 0.5));
-    background-size: cover;
-    background-position: center;*/
 }
 
 nav {
@@ -118,149 +113,61 @@ nav {
 }
 
 main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 50px;
-}
-  
-.hero {
-    text-align: center;
-    margin-bottom: 50px;
-}
-  
-.hero h2 {
-    font-size: 36px;
-    margin-bottom: 20px;
-}
-  
-.hero p {
-    font-size: 18px;
-    color: rgb(37, 36, 36);
-}
-  
-.hero a {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #121314;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 0px;
-    transition: border 0.3s, border-radius 0.3s, font-weight 0.3s;
-}
-
-.hero a:hover {
-    border: 3px solid transparent;
-    border-radius: 10px;
-    font-weight: 700;
-    animation: button 0.3s forwards;
-}
-  
-.services {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 40%;
-}
-  
-.services h2 {
-    text-align: center;
-}
-
-.services ul {
-    list-style: none;
-    padding: 0;
-}
-  
-.services li {
-    text-align: center;
-    margin-bottom: 30px;
-    padding: 16px;
-    border: 1px solid transparent;
-    transition: background-color 0.3s, box-shadow 0.3s;
-}
-
-.services li:hover {
-    cursor: pointer;
-    background-color: #e2a37f; 
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-    color: #333; 
-    animation: zoom 1s forwards;
-}
-  
-.services li i {
-    font-size: 36px;
-    margin-bottom: 10px;
-}
-  
-.services li h4 {
-    font-size: 20px;
-    margin-bottom: 10px;
-}
-  
-.testimonials {
-    display: flex;
-    justify-content: space-between;
-    width: 80%;
-    margin-top: 50px;
-}
-  
-.testimonials h3 {
-    text-align: center;
-    margin-right: 32px;
-}
-
-.testimonial {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    border: 1px solid #ccc;
-    border-radius: 8px;
     padding: 20px;
-    width: 45%;
-    margin-right: 15px;
 }
 
-.testimonial p {
-    font-size: 18px;
+h1, h2 {
+    color: #121314;
 }
-  
-.testimonial span {
-    font-style: italic;
-    display: block;
-    text-align: right;
+
+.contact-intro, .contact-form, .contact-info {
+    margin-bottom: 40px;
 }
-  
-.call-to-action {
-    text-align: center;
-    margin-top: 50px;
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
 }
-  
-.call-to-action h2 {
-    font-size: 30px;
+
+.contact-form label {
+    margin-top: 10px;
 }
-  
-.call-to-action p {
-    font-size: 18px;
-    color: rgb(37, 36, 36);
-    margin-bottom: 20px;
+
+.contact-form input, .contact-form textarea {
+    margin: 5px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 25%;
 }
-  
-.call-to-action a {
-    display: inline-block;
-    padding: 12px 25px;
+
+.contact-form input:focus, .contact-form textarea:focus {
+    outline: none;
+}
+
+.contact-form button {
+    margin-top: 25px;
+    margin-left: 25px;
+    padding: 8px 5px;
     background-color: #121314;
     color: #fff;
     text-decoration: none;
     border-radius: 0px;
     transition: border 0.3s, border-radius 0.3s, font-weight 0.3s;
+    width: 100px;
+    position: relative;
+    left: 107.5px;
 }
 
-.call-to-action a:hover {
+.contact-form button:hover {
     border: 3px solid transparent;
     border-radius: 8px;
     font-weight: 700;
     animation: button 0.3s forwards;
+}
+
+.contact-info p {
+    margin: 10px 0;
 }
 
 @keyframes button {

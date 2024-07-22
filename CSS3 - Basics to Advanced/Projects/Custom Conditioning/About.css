@@ -113,87 +113,73 @@ nav {
 }
 
 main {
+    padding: 20px;
+}
+h1, h2 {
+    color: #121314;
+}
+
+.about-intro, .mission-statement, .team, .approach, .success-stories, .values, .call-to-action {
+    margin-bottom: 40px;
+}
+
+.team-member {
     display: flex;
-    flex-direction: column;
     align-items: center;
-    padding: 50px;
+    margin-bottom: 20px;
 }
 
-.Registration-Form {
-    margin: 100px auto;
-    border: 1px solid #ccc;
-    border-radius: 6px;
-    border-width: 1px;
-    background-color: #f2f6ff;
-    width: 700px;
-}
-
-.Registration-Form:hover {
-    box-shadow: 4px 4px 10px #936745;
-}
-
-.Registration-Form h2 {
-    font-weight: 600; 
-    font-size: 32px; 
-    padding-top: 56px; 
-    padding-bottom: 32px; 
-    text-align: center;
-}
-
-#grid-container {
-    display: grid;
-    grid-template-columns: auto auto auto auto;
-    justify-content: space-evenly;
-    align-items: center;
+#team-members {
+    border: 1px solid #2c2b2b;
+    border-radius: 8px;
+    width: 75%;
     padding: 16px;
+    background: linear-gradient(135deg, #ff7e5f, #feb47b);
 }
 
-.social {
-    font-size: 42px;
-    margin: 25px 0px;
-    align-items: center;
+.team-member img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-right: 20px;
 }
 
-.social:hover {
-    animation: button 1s forwards;
+.team-member p:nth-of-type(1){
+    margin: 0 5px;
 }
 
-#input {
-    padding: 40px 80px 40px 80px;
+.team-member p:nth-of-type(2){
+    margin: 0 16px;
 }
 
-.input-label {
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
+.success-stories {
+    border: 1px solid #2c2b2b;
+    border-radius: 0px;
+    width: 55%;
+    padding: 16px;
+    margin-left: 16px;
+    background: linear-gradient(135deg, #ff7e5f, #feb47b);
 }
 
-.input-item {
-    font-size: 18px;
-    padding-bottom: 12px;
-    margin-bottom: 36px;
-    border-bottom: 1px solid #ccc; border-bottom: 1px solid #ccc;
-    border-top: none; border-left: none; border-right: none;
-    width: 100%;
-    background-color: #f2f6ff;;
+.success-stories:hover {
+    animation: zoom 3s forwards;
 }
 
-.input-item:focus {
-    outline: none;
+.testimonial blockquote {
+    font-style: italic;
+    color: #555;
 }
 
-#submit-button {
-    background-color: #e6ab5d;
-    padding-top: 12px; padding-bottom: 12px;   
-    padding-left: 24px; padding-right: 24px;
-    font-size: 18px;
-    color: black;
-    border: none;
-    display: inline-block;
+.testimonial p {
+    position: relative;
+    left: 675px;
 }
-
-#submit-button:hover {
-    animation: zoom 1s forwards;
+.call-to-action a {
+    background: #121314;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
 }
 
 @keyframes button {
@@ -212,6 +198,6 @@ main {
 
     100% {
         border-radius: 8px;
-        transform: scale(1.13);
+        transform: scale(1.05);
     }
 }
