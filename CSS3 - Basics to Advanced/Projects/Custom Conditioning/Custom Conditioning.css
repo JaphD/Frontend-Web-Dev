@@ -1,11 +1,6 @@
 body {
     margin: 0;
-    background: linear-gradient(135deg, #ff7e5f, #feb47b);
-    /*background-image: 
-        url('https://t4.ftcdn.net/jpg/07/36/23/03/240_F_736230372_swAZA1f8h5IX9luWJ9f36CMGvvDgPwWP.jpg'),
-        linear-gradient(to bottom, rgba(246, 246, 247, 0.5), rgba(225, 230, 236, 0.5));
-    background-size: cover;
-    background-position: center;*/
+    background: linear-gradient(135deg, #ffffff, #d8cfc4);
 }
 
 nav {
@@ -72,25 +67,31 @@ nav {
     display: flex;
     justify-content: center;
 }
+
+#search-container i {
+    font-size: 18px;
+    color: #4a4a4a;
+}
+
 #search-box {   
     margin-top: 25px;
-    width: 225px;
-    background: #ebc896; 
-    color: #2c2b2b;
-    border: 0.5px solid rgb(170, 168, 168);
-    font-size: 13px;
-    padding: 14px;
+    width: 250px;
+    background: #fff4e6; 
+    color: #3a3a3a;
+    border: 1px solid #d8bfa7;
+    font-size: 14px;
+    padding: 12px;
     padding-left: 28px;
-    border-radius: 24px;
-    box-sizing: border-box;
+    border-radius: 25px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     position: relative;
     top: -14px;
 }
 
 #search-box:focus {
-    border: none;
+    border: 1px solid #ff7e5f;
     outline: none;
-    background-color: #f6e7d2;
+    background-color: #fdf6f1;
 }
 
 #right-menu i {
@@ -140,20 +141,21 @@ main {
 }
   
 .hero a {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #121314;
+    margin-top: 20px;
+    padding: 10px 15px;
+    background-color: #ff7e5f;
     color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 16px;
     text-decoration: none;
-    border-radius: 0px;
-    transition: border 0.3s, border-radius 0.3s, font-weight 0.3s;
 }
 
 .hero a:hover {
-    border: 3px solid transparent;
-    border-radius: 10px;
-    font-weight: 700;
-    animation: button 0.3s forwards;
+    background-color: #feb47b;
+    animation: button 1s forwards;
 }
   
 .services {
@@ -171,6 +173,11 @@ main {
     list-style: none;
     padding: 0;
 }
+
+a.no-underline {
+    text-decoration: none;
+    color: black;
+}
   
 .services li {
     text-align: center;
@@ -178,11 +185,12 @@ main {
     padding: 16px;
     border: 1px solid transparent;
     transition: background-color 0.3s, box-shadow 0.3s;
+    
 }
 
 .services li:hover {
     cursor: pointer;
-    background-color: #e2a37f; 
+    background-color: #efccac; 
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
     color: #333; 
     animation: zoom 1s forwards;
@@ -192,10 +200,16 @@ main {
     font-size: 36px;
     margin-bottom: 10px;
 }
+
   
 .services li h4 {
     font-size: 20px;
     margin-bottom: 10px;
+    text-decoration: none;
+}
+
+.no-underline {
+    text-decoration: none;
 }
   
 .testimonials {
@@ -247,20 +261,32 @@ main {
 }
   
 .call-to-action a {
-    display: inline-block;
-    padding: 12px 25px;
-    background-color: #121314;
+    margin-top: 20px;
+    padding: 10px 15px;
+    background-color: #ff7e5f;
     color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 16px;
     text-decoration: none;
-    border-radius: 0px;
-    transition: border 0.3s, border-radius 0.3s, font-weight 0.3s;
 }
 
 .call-to-action a:hover {
-    border: 3px solid transparent;
-    border-radius: 8px;
-    font-weight: 700;
-    animation: button 0.3s forwards;
+    background-color: #feb47b;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #f9f3e4;
+    border-top: 1px solid #e0b89b;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+}
+
+footer p {
+    color: #4a4a4a;
 }
 
 @keyframes button {
@@ -281,4 +307,36 @@ main {
         border-radius: 8px;
         transform: scale(1.12);
     }
+}
+
+@media (max-width: 450px){
+    #topbar {
+        padding: 10px 13px;
+    }
+
+    nav {
+        flex-direction: column;
+    }
+
+    #left-menu, i {
+        flex-direction: column;
+    }
+    #right-menu {
+        display: none;
+    }
+}
+
+@media (max-width: 800px){  
+    #topbar {
+        padding: 10px 13px;
+    }
+
+    nav {
+        flex-direction: column;
+        
+    }
+
+    #right-menu {
+        justify-content: flex-start;
+    }  
 }
