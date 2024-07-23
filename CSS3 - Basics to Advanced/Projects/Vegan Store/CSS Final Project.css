@@ -28,6 +28,7 @@ nav{
 
 #menu {
     display: flex;
+    align-items: center;
 }
 
 .menu-item{
@@ -38,4 +39,25 @@ nav{
     cursor: pointer;
     font-size: 14px;
     transition: transform 0.3s, font-weight 0.2s;
+    text-decoration: none;
+}
+
+.menu-item a {
+    text-decoration: none;
+    color: black;
+}
+
+#buy-btn {
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    background-color: rgb(170, 210, 54);
+    Padding: 9px 34px;
+    border-radius: 4px;
+}
+
+#buy-btn a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
 }
