@@ -233,3 +233,45 @@ footer p {
         transform: scale(1.13);
     }
 }
+
+@media (max-width: 400px){
+    #topbar {
+        padding: 1px 13px;
+    }
+
+    nav {
+        flex-direction: column;
+    }
+
+    #left-menu, i {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 800px){  
+    #topbar {
+        padding: 0px 15px;
+    }
+
+    nav {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    #left-menu {
+        flex-direction: column;
+        transform: translateY(10px);
+    }   
+    
+    #right-menu {
+        flex-direction: row;
+        margin-left: 320px;
+        transform: translateY(-38px);
+    }
+
+    main {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 1000px)

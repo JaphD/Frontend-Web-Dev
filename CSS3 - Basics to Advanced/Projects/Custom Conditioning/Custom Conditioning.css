@@ -8,7 +8,7 @@ nav {
     justify-content: space-between;
 }
 #topbar {
-    padding: 10px 80px;
+    padding: 10px 30px;
     border-bottom: 1px solid #f0ba74;
     position: sticky;
     top: 0;
@@ -19,6 +19,13 @@ nav {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+#center-menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 20px;
 }
 
 #right-menu {
@@ -38,6 +45,11 @@ nav {
 }
 
 #left-menu a {
+    text-decoration: none;
+    color: black;
+}
+
+#center-menu a {
     text-decoration: none;
     color: black;
 }
@@ -75,13 +87,14 @@ nav {
 
 #search-box {   
     margin-top: 25px;
-    width: 250px;
+    width: 225px;
     background: #fff4e6; 
     color: #3a3a3a;
     border: 1px solid #d8bfa7;
     font-size: 14px;
     padding: 12px;
     padding-left: 28px;
+    padding-right: 33px;
     border-radius: 25px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     position: relative;
@@ -309,9 +322,9 @@ footer p {
     }
 }
 
-@media (max-width: 450px){
+@media (max-width: 400px){
     #topbar {
-        padding: 10px 13px;
+        padding: 1px 13px;
     }
 
     nav {
@@ -321,22 +334,29 @@ footer p {
     #left-menu, i {
         flex-direction: column;
     }
-    #right-menu {
-        display: none;
-    }
 }
 
 @media (max-width: 800px){  
     #topbar {
-        padding: 10px 13px;
+        padding: 0px 15px;
     }
 
     nav {
-        flex-direction: column;
-        
+        flex-direction: row;
+        flex-wrap: wrap;
     }
 
+    #left-menu {
+        flex-direction: column;
+        transform: translateY(10px);
+    }   
+    
     #right-menu {
-        justify-content: flex-start;
-    }  
+        flex-direction: row;
+        margin-left: 320px;
+        transform: translateY(-38px);
+    }
 }
+
+@media (max-width: 1000px)
+
