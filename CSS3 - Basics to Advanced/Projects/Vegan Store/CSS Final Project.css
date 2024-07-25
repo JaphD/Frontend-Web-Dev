@@ -1,8 +1,19 @@
 body {
     margin: 0;
     background-image: url('https://edyoda.s3.ap-south-1.amazonaws.com/public/landing-background.png');
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
+    font-family: 'Poppins', sans-serif;
+}
+
+#grid-container {
+    display: grid;
+    row-gap: 0;
+    grid-template-areas: 
+    'topbar topbar topbar topbar topbar topbar'
+    'section1 section1 section1 section1 section1 section1'
+    'section2 section2 section2 section2 section2 section2'
+    'section3 section3 section3 section3 section3 section3';
 }
 
 header {
@@ -11,48 +22,91 @@ header {
     position: sticky;
     top: 0;
     background: #fff;
-
+    grid-area: topbar;
 }
 
 nav{
     display: flex;
     justify-content: space-between;
-    padding: 16px 24px;
+    padding: 10px 0px;
     align-items: center;
 }
 
 #logo {
-    width: 45px;
-    height: 45px;
+    width: 40px;
+    height: 40px;
 }
 
 #menu {
     display: flex;
     align-items: center;
-}
-
-.menu-item{
-    margin: 0;
-    margin-right: 24px;
-    font-family: 'Raleway', sans-serif;
-    font-weight: 500;
-    cursor: pointer;
-    font-size: 14px;
-    transition: transform 0.3s, font-weight 0.2s;
-    text-decoration: none;
+    margin-right: 28px;
 }
 
 .menu-item a {
-    text-decoration: none;
+    
     color: black;
+    font-weight: 600;
+    font-size: 14px;
+    padding: 0px 30px;
+    text-decoration: none;
+}
+ #dropdown-1, #dropdown-2 {
+    color: black;
+    font-weight: 600;
+    font-size: 14px;
+    text-decoration: none;
+ }
+
+.menu-item i {
+    padding-right: 16px;
+}
+
+.dropdown-demo {
+    position: relative;
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.dropdown-demo i {
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    border-top: 2px solid rgb(170, 210, 54);
+    background-color: white;
+    box-shadow: 0 2px 5px #ccc;
+    padding: 0px 20px;
+}
+
+.dropdown-demo:hover .dropdown-content {
+    display: block;
+    right: 0;
+    left: auto;
+    width: 150px;
+}
+
+.dropdown-content p {
+    margin: 15px 10px;
+    padding: 0px 20px;
+    color: black;
+    text-align: left;
+    border-bottom: 1px solid lightgray;
+    cursor: pointer;
+}
+
+.dropdown-content p:last-of-type {
+    border-bottom: 1px solid transparent;
 }
 
 #buy-btn {
-    font-family: 'Poppins', sans-serif;
     font-size: 12px;
     font-weight: 600;
     background-color: rgb(170, 210, 54);
-    Padding: 9px 34px;
+    padding: 9px 34px;
+    margin-left: 25px;
     border-radius: 4px;
 }
 
@@ -61,3 +115,343 @@ nav{
     text-decoration: none;
     font-weight: 600;
 }
+
+#section1{
+    box-sizing: border-box;
+    height: 548px;
+    grid-area: section1;
+}
+
+#section1-heading {
+    font-size: 44px;
+    font-weight: 600;
+    letter-spacing: 8.8px;
+    line-height: 1.2;
+    text-align: center;
+    margin-top: 190px;
+}
+
+#section1-description {
+    margin-top: 16px;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    font-weight: 400;
+    color: #8b8b99;
+    text-align: center;
+}
+
+#section2 {
+    box-sizing: border-box;
+    height: 575px;
+    grid-area: section2;
+    display: grid;
+    grid-template-areas: 
+    'step1 step2 step3 step4';
+}
+
+#step1 {
+    background-color: #5acda6;
+    grid-area: step1;
+    padding: 112px 48px;
+    text-align: center;
+}
+
+#step1 i {
+    font-size: 90px;
+    color: #fff;
+}
+
+#step1 h3 {
+    font-weight: 600;
+    font-size: 24px;
+    color: #fff;
+}
+
+#step1 p {
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    line-height: 1.6;
+    text-align: center;
+    color: #fff;
+}
+
+#step1:hover i {
+    animation: scale-up 1s forwards;
+}
+
+#step2 {
+    background-color: #91ac41;
+    grid-area: step2;
+    padding: 112px 48px;
+    text-align: center;
+}
+
+#step2 i {
+    font-size: 90px;
+    color: #fff;
+}
+
+#step2 h3 {
+    font-weight: 600;
+    font-size: 24px;
+    color: #fff;
+}
+
+#step2 p {
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    line-height: 1.6;
+    text-align: center;
+    color: #fff;
+}
+
+#step2:hover i {
+    animation: scale-up 1s forwards;
+}
+
+#step3 {
+    background-color: #e4b476;
+    grid-area: step3;
+    padding: 112px 48px;
+    text-align: center;
+}
+
+#step3 i {
+    font-size: 90px;
+    color: #fff;
+}
+
+#step3 h3 {
+    font-weight: 600;
+    font-size: 24px;
+    color: #fff;
+}
+
+#step3 p {
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    line-height: 1.6;
+    text-align: center;
+    color: #fff;
+}
+
+#step3:hover i {
+    animation: scale-up 1s forwards;
+}
+
+#step4 {
+    background-color: #f69dad;
+    grid-area: step4;
+    padding: 112px 48px;
+    text-align: center;
+}
+
+#step4 i {
+    font-size: 90px;
+    color: #fff;
+    text-align: center;
+}
+
+#step4 h3 {
+    font-weight: 600;
+    font-size: 24px;
+    color: #fff;
+}
+
+#step4 p {
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    line-height: 1.6;
+    text-align: center;
+    color: #fff;
+}
+
+#step4:hover i {
+    animation: scale-up 0.1s forwards;
+}
+
+#section3 {
+    box-sizing: border-box;
+    background-color: #f7eee2;
+    height: 750px;
+    grid-area: section3;
+}
+
+#fresh-food {
+    font-size: 24px;
+    color: #91ac41;
+    font-family: 'Caveat',cursive;
+    margin: 0;
+    text-align: center;
+    padding-top: 100px;
+    transform: translateY(25px);
+}
+
+#section3-heading {
+    text-align: center;
+    font-size: 44px;
+    font-weight: 600;
+}
+
+#section3-description {
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    color: #8b8b99;
+    letter-spacing: 0.5px;
+}
+
+#store-items {
+    display: grid;
+    grid-template-areas: 
+    'fresh-veggie high-quality sale best-price'; 
+    grid-template-columns: repeat(4, 1fr);
+    margin: 60px 150px;
+    text-align: center;
+}
+
+#fresh-veggie {
+    grid-area: fresh-veggie;
+    padding: 15px;
+}
+
+#fresh-veggie i {
+    color: #fff;
+    font-size: 60px;
+    text-align: center;
+    border: 1px solid transparent;
+    border-radius: 80px;
+    padding: 35px;
+    background-color: #e3b375;
+}
+
+#fresh-veggie h3 {
+    font-size: 24px;
+    font-weight: 600;
+    text-align: center;
+}
+
+#fresh-veggie p {
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    font-weight: 500;
+    color: #8b8b99;
+    text-align: center;
+}
+
+#fresh-veggie:hover i {
+    animation: scale-up 0.3s forwards;
+}
+
+#high-quality {
+    grid-area: high-quality;
+    padding: 15px;
+}
+
+#high-quality i {
+    color: #fff;
+    font-size: 60px;
+    text-align: center;
+    border: 1px solid transparent;
+    border-radius: 80px;
+    padding: 35px;
+    background-color: #e3b375;
+}
+
+#high-quality h3 {
+    font-size: 24px;
+    font-weight: 600;
+    text-align: center;
+    color: black;
+}
+
+#high-quality p {
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    font-weight: 500;
+    color: #8b8b99;
+    text-align: center;
+}
+
+#high-quality:hover i {
+    animation: scale-up 0.3s forwards;
+}
+
+#sale {
+    grid-area: sale;
+    padding: 15px;
+}
+
+#sale i {
+    color: #fff;
+    font-size: 60px;
+    text-align: center;
+    border: 1px solid transparent;
+    border-radius: 80px;
+    padding: 35px;
+    background-color: #e3b375;
+}
+
+#sale h3 {
+    font-size: 24px;
+    font-weight: 600;
+    text-align: center;
+    color: black;
+}
+
+#sale p {
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    font-weight: 500;
+    color: #8b8b99;
+    text-align: center;
+}
+
+#sale:hover i {
+    animation: scale-up 0.3s forwards;
+}
+
+#best-price {
+    grid-area: best-price;
+    padding: 15px;
+}
+
+#best-price i {
+    color: #fff;
+    font-size: 60px;
+    text-align: center;
+    border: 1px solid transparent;
+    border-radius: 80px;
+    padding: 35px;
+    background-color: #e3b375;
+}
+
+#best-price h3 {
+    font-size: 24px;
+    font-weight: 600;
+    text-align: center;
+    color: black;
+}
+
+#best-price p {
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    font-weight: 500;
+    color: #8b8b99;
+    text-align: center;
+}
+
+#best-price:hover i {
+    animation: scale-up 0.3s forwards;
+}
+
+@keyframes scale-up {
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(1.11);
+    }
+}
+

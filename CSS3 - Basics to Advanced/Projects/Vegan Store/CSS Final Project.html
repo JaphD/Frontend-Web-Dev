@@ -5,8 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS Final Project</title>
     <link href="/Projects/Vegan Store/CSS Final Project.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/d50204446e.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&display=swap" rel="stylesheet">
 </head>
-<body>
+<body id="grid-container">
     <header>
         <nav>
             <div>
@@ -14,20 +16,163 @@
             </div>
 
             <div id="menu">
-                <p class="menu-item"><a href = ''>Demo Pages</a></p>
+                <p class="menu-item">
+                    <div class="dropdown-demo">
+                        <a id="dropdown-1" href = ''>Demo Pages</a>
+                        <i class="fa-solid fa-caret-down"></i>
+                        <div class="dropdown-content">
+                            <p>Menu Item 1</p>
+                            <p>Menu Item 2</p>
+                            <p>Menu Item 3</p>
+                        </div>
+                    </div>
+                </p>
                 <p class="menu-item"><a href =''>Watch Video</a></p>
-                <p class="menu-item"><a href =''>Blocks</a></p>
+                <p class="menu-item">
+                    <div id="dropdown-blocks">
+                        <a id = 'dropdown-2' href =''>Blocks</a>
+                        <i class="fa-solid fa-caret-down"></i>
+                    </div>
+                </p>
                 <p id="buy-btn"><a href = ''>BUY NOW</a></p>
             </div>
         </nav>
     </header>
 
     <main>
+        <section id="section1">
+            <h1 id="section1-heading">
+                Vegan Store Simple Website<br>Template
+            </h1>
+            <p id="section1-description">
+                With nutrition, all the vital functions of the body are connected. It is the source of the development
+                of tissues and cells, their constant renewal, the<br> saturation of man with energy.
+            </p>
+        </section>
 
+        <section id="section2">
+            <div id="step1">
+                <i class="fa fa-cut"></i>
+                <h3>
+                    Step 01.
+                </h3>
+                <p>
+                    Vegetables are an integral part of the human diet. They are extremely useful because
+                    of the high content of carbohydrates, various acids, vitamins and active elements in 
+                    the form, easy for digestion.
+                </p>
+            </div>
+            <div id="step2">
+                <i class="fa fa-paint-brush"></i>
+                <h3>
+                    Step 02.
+                </h3>
+                <p>
+                    Fresh tomatoes are ideal for replenshing the loss of minerals. These vegetables contain
+                    a lot of acids that our body needs for full-fledged work.
+                </p>
+            </div>
+            <div id="step3">
+                <i class="fa fa-shopping-bag"></i>
+                <h3>
+                    Step 03.
+                </h3>
+                <p>
+                    In the content of vitamin C, sweet peppers are superior to lemons and even black currants! 
+                    The greatest amount of vitamin is contained around the stalk, that is, in the part of the
+                    product that is usually cut during cleaning.
+                </p>
+            </div>
+            <div id="step4">
+                <i class="far fa-smile"></i>
+                <h3>
+                    Step 04.
+                </h3>
+                <p>
+                    If you sometimes eat hot chilli peppers, this will help normalize cerebral circulation, ease
+                    the condition with bronchial asthma, cough, sore throat, flu.
+                </p>
+            </div>
+
+        </section>
+
+        <section id="section3">
+            <h5 id="fresh-food">
+                Fresh Food
+            </h5>
+            <h1 id="section3-heading">
+                Our Vegan Store!
+            </h1>
+            <p id="section3-description">
+                Radish contains a lot of fiber, pectin and mineral salts.
+            </p>
+
+            <div id="store-items">
+                <div id="fresh-veggie">
+                    <i class="fa fa-camera"></i>
+                    <h3>
+                        Fresh Vegetables
+                    </h3>
+                        <p>
+                            Use for cooking several types of vegetable oil.
+                        </p>
+                </div>
+                <div id="high-quality">
+                    <i class="fa-rocket fa"></i>
+                    <h3>
+                        High Quality
+                    </h3>
+                    <p>
+                        This is the best source of essential fatty acids for the body.
+                    </p>
+                </div>
+                <div id="sale">
+                    <i class="fab fa-twitter"></i>
+                    <h3>
+                        Sale
+                    </h3>
+                    <p>
+                        It is very good, if in the kitchen there will always be several
+                    bottles with different oils.
+                    </p>
+                </div>
+                <div id="best-price">
+                    <i class="fab fa-weixin"></i>
+                    <h3>
+                        Best Price
+                    </h3>
+                    <p>
+                        Remember that unrefined oils are not suitable for heat treatment.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            
+        </section>
+
+        <section>
+            
+        </section>
+
+        <section>
+            
+        </section>
+
+        <section>
+            
+        </section>
+
+        <section>
+            
+        </section>
     </main>
 
     <footer>
-
+        <section>
+            
+        </section>
     </footer>
 </body>
 </html>
