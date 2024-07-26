@@ -15,7 +15,11 @@ body {
     'section2 section2 section2 section2 section2 section2'
     'section3 section3 section3 section3 section3 section3'
     'section4 section4 section4 section4 section4 section4'
-    'section5 section5 section5 section5 section5 section5';
+    'section5 section5 section5 section5 section5 section5'
+    'section6 section6 section6 section6 section6 section6'
+    'section7 section7 section7 section7 section7 section7'
+    'section8 section8 section8 section8 section8 section8'
+    'section9 section9 section9 section9 section9 section9';
 }
 
 header {
@@ -527,7 +531,7 @@ nav{
 }
 
 #testimony-1:hover {
-    box-shadow: 4px 4px 5px rgb(206, 204, 204);
+    box-shadow: 4px 4px 4px rgb(222, 220, 220);
 }
 
 #testimony-2 {
@@ -565,7 +569,7 @@ nav{
 }
 
 #testimony-2:hover {
-    box-shadow: 4px 4px 5px rgb(206, 204, 204);
+    box-shadow: 4px 4px 4px rgb(222, 220, 220);
 }
 
 #testimony-3 {
@@ -602,14 +606,203 @@ nav{
 }
 
 #testimony-3:hover {
-    box-shadow: 4px 4px 5px rgb(206, 204, 204);
+    box-shadow: 4px 4px 4px rgb(222, 220, 220);
 }
 
 #section5 {
     box-sizing: border-box;
     grid-area: section5;
-    height: 550px;
+    height: 620px;
+    display: grid;
+    grid-template-areas: 
+    'left-side left-side left-side left-side left-side left-side left-side right-side right-side';
 }
+
+#left-side {
+    grid-area: left-side;
+    background-image: url('https://mobirise.com/extensions/organicamp/assets/images/19.jpg');
+    background-size: cover;
+}
+
+#right-side {
+    grid-area: right-side;
+    background-image: url('https://edyoda.s3.ap-south-1.amazonaws.com/public/strawberry-white.png');
+    background-size: cover;
+    background-repeat: no-repeat;  
+}
+
+#right-side-elements {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 85px;
+}
+
+#section5-heading h1 {
+    text-align: center;
+    font-size: 44px;
+}
+
+#section5-description p {
+    text-align: left;
+    font-size: 16px;
+    color: #8b8b99;
+    transform: translateY(-30px);
+    line-height: 1.5;
+}
+
+#email-container {
+    text-align: left;
+}
+
+#email-container form input:first-of-type {
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid transparent;
+    background-color: white;
+    border-radius: 5px;
+    transform: translateY(-15px);
+}
+
+#email-container form input:first-of-type:focus {
+    outline: none;
+}
+
+#subscribe-button {
+    font-size: 16px;
+    text-align: center;
+    padding: 18px 32px;
+    background-color: #f69dad;
+    color: #fff;
+    font-weight: 600;
+    margin-top: 10px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    transform: translateY(-15px);
+}
+#subscribe-button:hover {
+    background-color: transparent;
+    border: 1px solid pink;
+    color: pink;
+}
+
+#section6 {
+    box-sizing: border-box;
+    grid-area: section6;
+    height: 325px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: rgb(242, 249, 242);
+}
+
+#experience {
+    padding-left: 55px;
+}
+
+#experience h2 {
+    font-size: 44px;
+    text-align: center;
+}
+
+#experience p {
+    font-size: 16px;
+    font-style: italic;
+    color: #95eacd;
+    transform: translateY(-25px);
+}
+
+#customers h2 {
+    font-size: 44px;
+    text-align: center;
+}
+
+#customers p {
+    font-size: 16px;
+    font-style: italic;
+    color: #95eacd;
+    transform: translateY(-25px);
+}
+
+#satisfaction h2 {
+    font-size: 44px;
+    text-align: center;
+}
+
+#satisfaction p {
+    font-size: 16px;
+    font-style: italic;
+    color: #95eacd;
+    transform: translateY(-25px);
+}
+
+#smoothies {
+    padding-right: 55px;
+}
+
+#smoothies h2 {
+    font-size: 44px;
+    text-align: center;
+}
+
+#smoothies p {
+    font-size: 16px;
+    font-style: italic;
+    color: #95eacd;
+    transform: translateY(-25px);
+}
+
+#section7 {
+    grid-area: section7;
+    box-sizing: border-box;
+}
+
+#section7-header {
+    text-align: center;
+    font-size: 28px;
+    padding: 35px;
+    color: #8b8b99;
+}
+
+.line {
+    color: rgb(237, 201, 201);
+}
+
+#section7-video {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 75px;
+}
+
+#section8 {
+    grid-area: section8;
+    height: 650px;
+    display: grid;
+    grid-template-areas: 
+    'address-info contact';
+}
+
+#address-info {
+    grid-area: address-info ;
+}
+
+#contact {
+    grid-area: contact;
+}
+/*
+#section9 {
+    box-sizing: border-box;
+    background-color: #232323;
+    color: white;
+    grid-area: section9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+}
+*/
 
 @keyframes scale-up {
     0% {
