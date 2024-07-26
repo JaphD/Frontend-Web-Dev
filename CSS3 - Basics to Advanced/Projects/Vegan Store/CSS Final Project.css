@@ -13,7 +13,9 @@ body {
     'topbar topbar topbar topbar topbar topbar'
     'section1 section1 section1 section1 section1 section1'
     'section2 section2 section2 section2 section2 section2'
-    'section3 section3 section3 section3 section3 section3';
+    'section3 section3 section3 section3 section3 section3'
+    'section4 section4 section4 section4 section4 section4'
+    'section5 section5 section5 section5 section5 section5';
 }
 
 header {
@@ -99,6 +101,10 @@ nav{
 
 .dropdown-content p:last-of-type {
     border-bottom: 1px solid transparent;
+}
+
+#dropdown-blocks i {
+    cursor: pointer;
 }
 
 #buy-btn {
@@ -277,7 +283,7 @@ nav{
     grid-area: section3;
 }
 
-#fresh-food {
+#fresh-food-section3 {
     font-size: 24px;
     color: #91ac41;
     font-family: 'Caveat',cursive;
@@ -312,7 +318,7 @@ nav{
 
 #fresh-veggie {
     grid-area: fresh-veggie;
-    padding: 15px;
+    padding: 12px;
 }
 
 #fresh-veggie i {
@@ -345,7 +351,7 @@ nav{
 
 #high-quality {
     grid-area: high-quality;
-    padding: 15px;
+    padding: 12px;
 }
 
 #high-quality i {
@@ -379,7 +385,7 @@ nav{
 
 #sale {
     grid-area: sale;
-    padding: 15px;
+    padding: 12px;
 }
 
 #sale i {
@@ -413,7 +419,7 @@ nav{
 
 #best-price {
     grid-area: best-price;
-    padding: 15px;
+    padding: 12px;
 }
 
 #best-price i {
@@ -443,6 +449,166 @@ nav{
 
 #best-price:hover i {
     animation: scale-up 0.3s forwards;
+}
+
+#section4 {
+    box-sizing: border-box;
+    height: 850px;
+    grid-area: section4;
+}
+
+#fresh-food-section4 {
+    font-size: 24px;
+    color: #91ac41;
+    font-family: 'Caveat',cursive;
+    margin: 0;
+    margin-top: 35px;
+    text-align: center;
+    padding-top: 100px;
+    transform: translateY(25px);
+}
+
+#section4-heading {
+    text-align: center;
+    font-size: 44px;
+    font-weight: 600;
+}
+
+#section4-description {
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    color: #8b8b99;
+    letter-spacing: 0.5px;
+    transform: translateY(-15px);
+}
+
+#testimonial {
+    display: grid;
+    grid-template-areas: 
+    'testimony-1 testimony-2 testimony-3'; 
+    grid-template-columns: repeat(3, 1fr);
+    margin: 90px 150px;
+    text-align: center;
+}
+
+#testimony-1 {
+    grid-area: testimony-1;
+    background-color: #f5f6fb;
+    border-radius: 45px 0px 45px 45px;
+    padding: 40px 12px;
+    margin-right: 25px;
+}
+
+#testimony-1 img {
+    border-radius: 50%;
+    width: 80px;
+}
+
+#testimony-1 p {
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    font-style: italic;
+    color: #8b8b99;
+    line-height: 1.5;
+}
+
+#testimony-1 h3 {
+    font-size: 16px;
+    font-weight: 600;
+    transform: translateY(30px);
+}
+
+#testimony-1 h6 {
+    font-size: 12px;
+    color: #8b8b99;
+    font-style: italic;
+    transform: translateY(8px);
+}
+
+#testimony-1:hover {
+    box-shadow: 4px 4px 5px rgb(206, 204, 204);
+}
+
+#testimony-2 {
+    grid-area: testimony-2;
+    background-color: #f5f6fb;
+    border-radius: 45px 0px 45px 45px;
+    padding: 40px 12px;
+    margin-right: 25px;
+}
+
+#testimony-2 img {
+    border-radius: 50%;
+    width: 80px;
+}
+
+#testimony-2 p {
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    font-style: italic;
+    color: #8b8b99;
+    line-height: 1.5;
+}
+
+#testimony-2 h3 {
+    font-size: 16px;
+    font-weight: 600;
+    transform: translateY(50px);
+}
+
+#testimony-2 h6 {
+    font-size: 12px;
+    color: #8b8b99;
+    font-style: italic;
+    transform: translateY(28px);
+}
+
+#testimony-2:hover {
+    box-shadow: 4px 4px 5px rgb(206, 204, 204);
+}
+
+#testimony-3 {
+    grid-area: testimony-3;
+    background-color: #f5f6fb;
+    border-radius: 45px 0px 45px 45px;
+    padding: 40px 25px;
+}
+
+#testimony-3 img {
+    border-radius: 50%;
+    width: 80px;
+}
+
+#testimony-3 p {
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    font-style: italic;
+    color: #8b8b99;
+    line-height: 1.5;
+}
+
+#testimony-3 h3 {
+    font-size: 16px;
+    font-weight: 600;
+    transform: translateY(28px);
+}
+
+#testimony-3 h6 {
+    font-size: 12px;
+    color: #8b8b99;
+    font-style: italic;
+    transform: translateY(5px);
+}
+
+#testimony-3:hover {
+    box-shadow: 4px 4px 5px rgb(206, 204, 204);
+}
+
+#section5 {
+    box-sizing: border-box;
+    grid-area: section5;
+    height: 550px;
 }
 
 @keyframes scale-up {
