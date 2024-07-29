@@ -1,17 +1,21 @@
 body {
     margin: 0;
-    background-image: url('https://edyoda.s3.ap-south-1.amazonaws.com/public/landing-background.png');
-    background-size: contain;
-    background-repeat: no-repeat;
     font-family: 'Poppins', sans-serif;
 }
 
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
 header {
-    padding: 0px 30px;
+    padding: 0px 15px 0px 30px;
     border-bottom: 1px solid transparent;
     position: sticky;
     top: 0;
     background: #fff;
+    z-index: 1000;
 }
 
 nav{
@@ -33,7 +37,6 @@ nav{
 }
 
 .menu-item a {
-    
     color: black;
     font-weight: 600;
     font-size: 14px;
@@ -125,11 +128,14 @@ nav{
     'section6 section6 section6 section6 section6 section6'
     'section7 section7 section7 section7 section7 section7'
     'section8 section8 section8 section8 section8 section8';
+    grid-template-rows: 675px 575px 750px 875px 620px 325px auto 725px;
 }
 
 #section1{
-    box-sizing: border-box;
-    height: 675px;
+    width: 100%;
+    background-image: url('https://edyoda.s3.ap-south-1.amazonaws.com/public/landing-background.png');
+    background-size: cover;
+    background-repeat: no-repeat;
     grid-area: section1;
 }
 
@@ -152,8 +158,6 @@ nav{
 }
 
 #section2 {
-    box-sizing: border-box;
-    height: 575px;
     grid-area: section2;
     display: grid;
     grid-template-areas: 
@@ -282,9 +286,7 @@ nav{
 }
 
 #section3 {
-    box-sizing: border-box;
     background-color: #f7eee2;
-    height: 750px;
     grid-area: section3;
 }
 
@@ -457,8 +459,6 @@ nav{
 }
 
 #section4 {
-    box-sizing: border-box;
-    height: 850px;
     grid-area: section4;
     margin-bottom: 50px;
 }
@@ -612,9 +612,7 @@ nav{
 }
 
 #section5 {
-    box-sizing: border-box;
     grid-area: section5;
-    height: 620px;
     display: grid;
     grid-template-areas: 
     'left-side left-side left-side left-side left-side left-side left-side right-side right-side';
@@ -690,9 +688,7 @@ nav{
 }
 
 #section6 {
-    box-sizing: border-box;
     grid-area: section6;
-    height: 325px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -758,7 +754,6 @@ nav{
 
 #section7 {
     grid-area: section7;
-    box-sizing: border-box;
 }
 
 #section7-header {
@@ -782,12 +777,10 @@ nav{
 
 #section8 {
     grid-area: section8;
-    height: 650px;
     display: flex;
     flex-direction: row;
     text-align: left;
     justify-content: center;
-    margin-bottom: 105px;
 }
 
 #address-info {
@@ -889,7 +882,6 @@ nav{
 }
 
 #section9 {
-    box-sizing: border-box;
     background-color: #232323;
     color: white;
     padding: 15px;
@@ -906,5 +898,148 @@ nav{
     }
 }
 
+@media (max-width: 900px) {
+    header {
+        padding: 0px 0px 0px 25px;
+    }
+
+    .menu-item ,.dropdown-demo, #dropdown-blocks{
+        display: none;
+    }
+
+    #buy-btn {
+        position: fixed;
+        right: 25px;
+    }
+
+    #grid-container {
+        display: grid;
+        row-gap: 0;
+        grid-template-areas: 
+        'section1 section1 section1 section1 section1 section1'
+        'section2 section2 section2 section2 section2 section2'
+        'section3 section3 section3 section3 section3 section3'
+        'section4 section4 section4 section4 section4 section4'
+        'section5 section5 section5 section5 section5 section5'
+        'section6 section6 section6 section6 section6 section6'
+        'section7 section7 section7 section7 section7 section7'
+        'section8 section8 section8 section8 section8 section8';
+        grid-template-rows: 1300px auto auto auto 620px 325px auto 725px;
+    }
+
+    #section1{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #section1-heading {
+        font-size: 35px;
+        margin-top: 0px;
+    }
+    
+    #section1-description {
+        margin-top: 0px;
+        text-align: center;
+    }
+
+    #section2 {
+        grid-template-areas: 
+        'step1'
+        'step2'
+        'step3'
+        'step4';
+    }
+
+    #fresh-food-section3 {
+        padding-top: 50px;
+        transform: translateY(0px);
+    }
+
+    #section3-heading {
+        transform: translateY(-25px);
+    }
+    
+    #section3-description {
+        transform: translateY(-45px);
+        font-size: 20px;
+    }
+
+    #store-items {
+        grid-template-areas:
+        'fresh-veggie'
+        'high-quality'
+        'sale'
+        'best-price';
+        grid-template-columns: auto;
+        margin: 0px 0px 35px 0px;
+    }
+
+    #fresh-veggie, #high-quality, #sale, #best-price {
+        margin-top: 20px;
+    }
+
+    #section4 {
+        grid-area: section4;
+        margin-bottom: 50px;
+    }
+    
+    #fresh-food-section4 {
+        padding-top: 40px;
+        transform: translateY(0px);
+    }
+    
+    #section4-heading {
+        transform: translateY(-25px);
+    }
+    
+    #section4-description {
+        transform: translateY(-45px);
+        font-size: 20px;
+    }
+    
+    #testimonial {
+        grid-template-areas: 
+        'testimony-1' 
+        'testimony-2' 
+        'testimony-3'; 
+        grid-template-columns: auto;
+        margin: 0px 0px 15px 0px;
+    }
+    
+    #testimony-1 {
+        width: 100%;
+        margin: 30px 0px 0px 0px;
+    }
+    
+    #testimony-1 p {
+        font-size: 14px;
+    }
+    
+    #testimony-1 h3, #testimony-1 h6, #testimony-2 h3, #testimony-2 h6  {
+        transform: translateY(0);
+    }
+    
+    #testimony-2 {
+        margin: 30px 0px 0px 0px;
+    }
+    
+    #testimony-2 p {
+        font-size: 14px;
+    }
+    
+    #testimony-3 {
+        margin: 30px 0px 0px 0px;
+    }
+
+    #section5 {
+        grid-template-areas: 
+        'left-side'
+        'left-side'
+        'right-side';
+        grid-template-columns: auto;
+    }
 
 
+}
