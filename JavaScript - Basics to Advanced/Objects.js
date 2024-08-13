@@ -62,4 +62,38 @@ console.log('')
     
     console.log(premiumCustomers)
     
+    console.log('')
 
+//Q2. Write a JavaScript program to list the properties of a JavaScript object.
+    food = {
+        'name': 'Peanut Butter',
+        'weight': 100,
+        'calories': 600
+    };
+
+    var properties = [];
+
+    for (let foods in food) {
+        properties.push(foods)
+    }
+
+    console.log(properties)
+
+    console.log('')
+
+//Q3. Write a JavaScript program to delete the rollno property from the following object. Also print the object before or after deleting the property
+    student = {
+        name : "David Rayy",
+        sclass : "VI",
+        rollno : 12
+        }
+    
+    var keyToDelete = 'rollno';
+
+    console.log('keyToDelete: ', keyToDelete,'\nObject before deletion: ', student);
+
+    delete student[keyToDelete];
+
+    console.log('Object after deletion:', student);
+
+    console.log('')
