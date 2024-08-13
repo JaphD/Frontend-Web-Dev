@@ -30,15 +30,47 @@ console.log(nLastValue)
 console.log('')
 
 //Practice Problem
-//Q1. Write a JavaScript program to create a new array by reversing the elements of given
-//array.
-    arr = [1,'a',2,'b',3,'c',6,'d',7,'e',8,'f'];
-    newArr = [];
+//Q1. Write a JavaScript program to find the longest string from a given array.
+    array = ['asdf', 'sd', 'something','right','position'];
+    
+    const characters = []
 
-    for (let i = arr.length-1; i >= 0; i--) {
-        newArr.push(arr[i])
+    for (let i = 0; i < array.length; i++) {
+        const count = array[i].length;
+        characters.push(count);
     }
+    
+    longest = Math.max(...characters)
+    largestStringIndex = 0;
 
-    console.log(newArr)
+    for (let i = 0; i < characters.length; i++)
+        if (characters[i] == longest) {
+            largestStringIndex = i;
+        }
+
+    console.log('Longest String in array:',array[largestStringIndex])
 
     console.log('')
+
+//Q2. Write a JavaScript program to remove '0', false, undefined, null, NaN, '' from given array.
+    array2 =  [NaN, 0, 15, false, -22, '',undefined, 47, null,94];
+    
+    const cleanedArray = array2.filter(element =>
+        element !== 0 &&
+        element !== false &&
+        element !== undefined &&
+        element !== null &&
+        !Number.isNaN(element) &&
+        element !== ''
+    );
+
+    console.log(cleanedArray)
+
+    console.log('')
+
+//Q3. Write a JavaScript code to divide a given array of positive integers into two parts. First element goes to first part, second element goes to second part, and third element goes to first part and so on.
+//Now compute the sum of two parts and store into an array of size two.
+    
+
+
+    
