@@ -97,3 +97,48 @@ console.log('')
     console.log('Object after deletion:', student);
 
     console.log('')
+
+//Q4. Write a JavaScript program to get the length of a JavaScript object.
+    student = {
+        name : "David Rayy",
+        sclass : "VI",
+        rollno : 12,
+        }
+    
+    var count = 0;
+
+    for (let key in student) {
+        count++;
+    }
+
+    console.log(count)
+
+    console.log('')
+
+//Q5. Write a JavaScript program to display the reading status (i.e. display book name, author name and reading status) of the following books.
+    library = [
+        {
+        author: 'Bill Gates',
+        title: 'The Road Ahead',
+        readingStatus: true
+        },
+        {
+        author: 'Steve Jobs',
+        title: 'Walter Isaacson',
+        readingStatus: true
+        },
+        {
+        author: 'Suzanne Collins',
+        title: 'Mockingjay: The Final Book of The Hunger Games',
+        readingStatus: false
+        }];
+
+    for (let i = 0; i < library.length; i++) {
+        if(library[i].readingStatus) {
+            console.log('You have already read',library[i].title, 'by',library[i].author); 
+        }
+        else {
+            console.log('You still need to read',library[i].title, 'by',library[i].author);
+        }
+    }
+
