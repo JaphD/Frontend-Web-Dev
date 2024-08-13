@@ -70,7 +70,96 @@ console.log('')
 
 //Q3. Write a JavaScript code to divide a given array of positive integers into two parts. First element goes to first part, second element goes to second part, and third element goes to first part and so on.
 //Now compute the sum of two parts and store into an array of size two.
-    
+    myArray = [2, 6, 9, 13, 18, 20]
+
+    myArray1 = [];
+    myArray2 = [];
+
+    condition = true;
+
+    for (let i = 0; i < myArray.length; i++) {
+        if (condition) {
+            myArray1.push(myArray[i]);
+            condition = false;
+        }
+        else {
+            myArray2.push(myArray[i]);
+            condition = true;
+        }
+    }
+
+    var sum1 = 0;
+    var sum2 = 0;
+    outputArray = []
+
+    for (let i = 0; i < myArray1.length; i++) {
+        sum1 += myArray1[i]
+    }
+    outputArray.push(sum1)
+
+    for (let i = 0; i < myArray2.length; i++) {
+        sum2 += myArray2[i]
+    }
+    outputArray.push(sum2)
+
+    console.log(outputArray)
+
+    console.log('')
+
+//Q4. Write a JavaScript program to check whether there is at least one element which occurs in two given sorted arrays of integers.
+    arr1 = [1,2,3];
+    arr2 = [7,4,5];
+
+    i = 0;
+    j = 0;
+    let commonElementFound = false;
+
+    while (i < arr1.length && j < arr2.length) {
+        if (arr1[i] == arr2[j]) {
+            commonElementFound = true;
+            break;
+        }
+        else if (arr1[i] < arr2[j]) {
+            i++;
+        }
+        else {
+            j++
+        }
+    }
+
+    console.log("Output:",commonElementFound ? 'True' : 'False');
+
+    console.log('')
+
+//Q5. Write a JavaScript function to find the difference of two arrays.
+    numberArray1 = [3, 6, 9, 23];
+    numberArray2 = [6, 9, 15, 39];
+
+    difference1 = [];
+    difference2 = [];
+
+    for (let i = 0; i < numberArray1.length; i++) {
+        if (!numberArray2.includes(numberArray1[i])) {
+            difference1.push(numberArray1[i]);
+        }
+    }
+
+    for (let j = 0; j < numberArray2.length; j++) {
+        if (!numberArray1.includes(numberArray2[j])) {
+            difference2.push(numberArray2[j]);
+        }
+    }
+
+    difference = difference1.concat(difference2);
+
+    console.log(difference);
+
+
+
+
+
+
+
 
 
     
