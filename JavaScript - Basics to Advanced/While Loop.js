@@ -63,4 +63,44 @@ console.log(mValue);
 
     console.log('')
 
-//Q4. Write a JavaScript program to sum the multiples of 3 and 5 under 1000.
+//Q4. Write a JavaScript program to sum the multiples of 3 and 5 under 1000.  
+    i = 3;
+    j = 5;
+
+    sum = 0;
+
+    while (i < 1000 || j < 1000) { 
+        if (i < 1000 && i % 3 == 0) {
+            sum += i;
+            i++; 
+        } else if (j < 1000 && j % 5 == 0) {
+            sum += j;
+            j++;  
+        } else {
+            if (i < 1000) i++;  
+            if (j < 1000) j++;  
+        }
+    }
+    
+    console.log(sum);
+
+    console.log('')
+    
+//Q5. Write a JavaScript program which iterates the integers from 1 to 15. But for multiples of three print "Fizz" instead of the number and for the multiples of five print "Buzz". For numbers which are multiples of both three and five print "FizzBuzz".
+    number = 1;
+
+    while (number <= 15) {
+        if (number % 3 == 0 && number % 5 == 0) {
+            console.log('FizzBuzz')
+        }
+        else if (number % 3 == 0) {
+            console.log('Fizz')
+        }
+        else if (number % 5 == 0) {
+            console.log('Buzz')
+        }
+        else {
+            console.log(number)
+        }
+        number++
+    }
