@@ -68,3 +68,62 @@ console.log('')
         }
     }
     console.log(myFactorial(4));
+
+    console.log('')
+
+//Q3. Write a function isPalindrome(str) that checks if a given string str is a palindrome. A palindrome is a word that reads the same backward as forward, ignoring spaces and punctuation.
+    function isPalindrome(string) {
+        forwardString = string.toLowerCase();
+        backwardString = '';
+
+        for (i = forwardString.length-1; i >= 0; i--) {
+            backwardString += forwardString[i]
+        }
+
+        if (backwardString === forwardString) {
+            return true
+        }
+        else {
+            return false
+        }
+    }
+
+    console.log(isPalindrome('madam'))
+    console.log(isPalindrome('hello'))
+
+    console.log('')
+
+//Q4. Write a function findMax(arr) that takes an array of numbers arr and returns the maximum number in the array. Do not use the built-in Math.max function.
+    function findMax(arr) {
+        max = arr[0];
+
+        for (i = 1; i < arr.length; i++) {
+            if (arr[i] >= max) {
+                max = arr[i];
+            }
+
+        }
+        return max;
+    }
+
+    console.log(findMax([-45, -19, -4, -2]));
+    console.log(findMax([-50, -30, 5, 19]));
+
+    console.log('')
+
+//Q5. Write a function flattenArray(arr) that takes a nested array arr and returns a single array with all the elements flattened (i.e., no nested arrays).
+    function flattenArray(array) {
+        let newArray = [];
+
+        for (let i = 0; i < array.length; i++) {
+            if (Array.isArray(array[i])) {
+                newArray = newArray.concat(flattenArray(array[i]));
+            } else {
+                newArray.push(array[i]);
+            }
+        }
+
+        return newArray;
+    }
+
+    console.log(flattenArray([1, [2, 3], [4, [5, 6]]]));
