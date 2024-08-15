@@ -35,3 +35,36 @@ function totalSum(num1 = 10, num2 = 20, num3 = 40) { //Default values can be pas
 }
 
 totalSum();
+
+console.log('')
+
+//Practice Problems
+//Q1. Write a function sum(a, b) that takes two numbers as arguments and returns their sum.
+    function sumOfNumbers(number1, number2) {
+        return number1 + number2
+    }
+
+    console.log(sumOfNumbers(45,65))
+
+    console.log('')
+
+//Q2. Write a function factorial(n) that takes a non-negative integer n and returns the factorial of n. The factorial of a number n is the product of all positive integers less than or equal to n.
+//Solution One - More efficient as it uses less memory
+    function factorial(number) {
+        product = 1;
+        for (i = number; i >= 1; i--) {
+            product *= i;
+        }
+        return product;
+    }
+
+    console.log(factorial(6))
+//Solution Two 
+    function myFactorial(num) {
+        if (num === 0 || num === 1) {
+            return 1;
+        } else {
+            return num * myFactorial(num - 1);
+        }
+    }
+    console.log(myFactorial(4));
