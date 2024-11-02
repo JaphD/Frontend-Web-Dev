@@ -1,0 +1,60 @@
+body {
+    margin: 0;
+    background-color: aliceblue;
+    text-align: center;
+}
+
+#click {
+    margin: 25px;
+    padding: 8px;
+    font-size: 20px;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    margin: 15px;
+}
+
+main div {
+    margin: 30px;
+    padding: 25px;
+    background-color: rgb(239, 145, 111);
+}
+
+#over h3 {
+    background-color: rgb(178, 213, 245);
+    padding: 15px;
+    font-size: 15px;
+}
+
+#over p {
+    background-color: rgb(187, 108, 52);
+    padding: 15px;
+    font-size: 25px;
+}
+
+#enter h3 {
+    background-color: rgb(178, 213, 245);
+    padding: 15px;
+    font-size: 15px;
+}
+
+#enter p {
+    background-color: rgb(187, 108, 52);
+    padding: 15px;
+    font-size: 25px;
+}
+
+#move h3 {
+    background-color: rgb(178, 213, 245);
+    padding: 15px;
+    font-size: 15px;
+}
+
+#move p {
+    background-color: rgb(187, 108, 52);
+    padding: 15px;
+    font-size: 25px;
+}
+
